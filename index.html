@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <!-- PWA -->
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#2d9e6b" />
+    <meta name="mobile-web-app-capable" content="yes" />
+
+    <!-- Apple / iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="VitaalCheck" />
+    <link rel="apple-touch-icon" href="/icon-192.png" />
+
+    <!-- SEO -->
+    <meta name="description" content="VitaalCheck — de enige Nederlandse app die diëten, allergieën, zwangerschap, supplementen en persoonlijke coaching combineert." />
+    <meta name="keywords" content="dieet, allergie, zwangerschap, supplementen, leefstijl, gezondheid, Nederland" />
+    <meta name="author" content="Amanda" />
+
+    <!-- Open Graph (WhatsApp / social preview) -->
+    <meta property="og:title" content="VitaalCheck" />
+    <meta property="og:description" content="De enige Nederlandse app die diëten, allergieën, zwangerschap, supplementen en persoonlijke coaching combineert." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://vitaalcheck.nl" />
+    <meta property="og:image" content="/icon-512.png" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="VitaalCheck" />
+    <meta name="twitter:description" content="Jouw persoonlijke gids voor voeding, leefstijl en gezondheid." />
+
+    <title>VitaalCheck</title>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body { background: #f4faf4; -webkit-font-smoothing: antialiased; }
+      #root { min-height: 100vh; }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    <script>
+      // Register service worker
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("/sw.js").then(
+            (reg) => console.log("SW registered:", reg.scope),
+            (err) => console.log("SW failed:", err)
+          );
+        });
+      }
+    </script>
+  </body>
+</html>
