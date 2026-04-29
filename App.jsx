@@ -559,6 +559,16 @@ const RECIPES = {
     { name:"Tonijn salade", time:"10 min", cal:310, ingredients:["Tonijn","Avocado","Komkommer","Citroen"], desc:"Frisse tonijnsalade met romige avocado." },
     { name:"Gegrilde garnalen", time:"15 min", cal:270, ingredients:["Garnalen","Knoflook","Olijfolie","Citroen","Paprika"], desc:"Snel gegrilde garnalen met knoflook." },
     { name:"Bloemkoolrijst bowl", time:"20 min", cal:230, ingredients:["Bloemkool","Ei","Knoflook","Olijfolie"], desc:"Bloemkool als gezonde rijstvervanger." },
+    { name:"Keto ontbijt bowl", time:"10 min", cal:380, ingredients:["Ei","Spek","Avocado","Tomaat"], desc:"Vullend keto ontbijt zonder koolhydraten." },
+    { name:"Zalm met rode kool", time:"25 min", cal:360, ingredients:["Zalm","Rode kool","Citroen","Olijfolie"], desc:"Kleurrijke keto maaltijd met rode kool." },
+    { name:"Kip met venkel", time:"30 min", cal:310, ingredients:["Kipfilet","Venkel","Knoflook","Olijfolie","Citroen"], desc:"Aromatische kip met geroosterde venkel." },
+    { name:"Makreel salade", time:"10 min", cal:340, ingredients:["Makreel","Komkommer","Rucola","Citroen","Olijfolie"], desc:"Snelle salade met vette makreel." },
+    { name:"Keto groentesoep", time:"25 min", cal:180, ingredients:["Courgette","Spinazie","Broccoli","Knoflook","Olijfolie"], desc:"Romige groentesoep zonder aardappel." },
+    { name:"Gevulde paprika keto", time:"30 min", cal:350, ingredients:["Paprika","Gehakt","Champignons","Kaas","Knoflook"], desc:"Paprika gevuld met gehakt en kaas." },
+    { name:"Sardines met rucola", time:"10 min", cal:290, ingredients:["Sardines","Rucola","Citroen","Olijfolie"], desc:"Snelle mediterrane keto snack." },
+    { name:"Witlof met ham", time:"15 min", cal:260, ingredients:["Witlof","Ham","Kaas","Boter"], desc:"Klassiek Nederlands keto gerecht." },
+    { name:"Spruiten met spek", time:"20 min", cal:310, ingredients:["Spruiten","Spek","Boter","Knoflook"], desc:"Krokante spruiten met gebakken spek." },
+    { name:"Kip rode kool stoofpot", time:"35 min", cal:370, ingredients:["Kipfilet","Rode kool","Ui","Olijfolie","Knoflook"], desc:"Warme keto stoofpot voor de herfst." },
   ],
   vegan: [
     { name:"Quinoa bowl", time:"20 min", cal:420, ingredients:["Quinoa","Kikkererwten","Spinazie","Tomaat","Citroen"], desc:"Voedzame plantaardige bowl." },
@@ -571,6 +581,16 @@ const RECIPES = {
     { name:"Tomatensalade", time:"10 min", cal:150, ingredients:["Tomaat","Ui","Olijfolie","Citroen"], desc:"Zomerse tomatensalade met vinaigrette." },
     { name:"Linzen dhal", time:"40 min", cal:430, ingredients:["Linzen","Tomaat","Ui","Knoflook","Rijst"], desc:"Indiaas geïnspireerde linzenstoofpot." },
     { name:"Courgette soep", time:"25 min", cal:180, ingredients:["Courgette","Ui","Knoflook","Olijfolie"], desc:"Lichte romige courgettesoep." },
+    { name:"Rode kool salade", time:"15 min", cal:190, ingredients:["Rode kool","Appel","Walnoten","Citroen","Olijfolie"], desc:"Frisse winterse salade met walnoten." },
+    { name:"Pompoen soep", time:"30 min", cal:210, ingredients:["Pompoen","Ui","Knoflook","Olijfolie","Amandelmelk"], desc:"Romige pompoenvsoep zonder room." },
+    { name:"Spruiten wok", time:"20 min", cal:260, ingredients:["Spruiten","Prei","Knoflook","Sojasaus","Sesamzaad"], desc:"Aziatische wok van wintergroenten." },
+    { name:"Witlof salade", time:"10 min", cal:170, ingredients:["Witlof","Appel","Walnoten","Citroen","Olijfolie"], desc:"Klassieke Belgische witlofsalade." },
+    { name:"Gevulde paprika vegan", time:"35 min", cal:350, ingredients:["Paprika","Quinoa","Kikkererwten","Tomaat","Knoflook"], desc:"Paprika gevuld met quinoa en kikkererwten." },
+    { name:"Granaatappel salade", time:"10 min", cal:220, ingredients:["Rucola","Granaatappel","Walnoten","Olijfolie","Citroen"], desc:"Feestelijke salade met granaatappelpitjes." },
+    { name:"Venkel sinaasappel salade", time:"10 min", cal:160, ingredients:["Venkel","Sinaasappel","Olijfolie","Citroen"], desc:"Frisse Italiaanse wintersalade." },
+    { name:"Prei soep", time:"25 min", cal:180, ingredients:["Prei","Aardappel","Ui","Olijfolie","Amandelmelk"], desc:"Romige preisoep helemaal plantaardig." },
+    { name:"Radijs komkommer snack", time:"5 min", cal:80, ingredients:["Radijs","Komkommer","Hummus","Citroen"], desc:"Lichte vegan snack voor tussendoor." },
+    { name:"Mais avocado bowl", time:"15 min", cal:390, ingredients:["Mais","Avocado","Tomaat","Citroen","Koriander"], desc:"Mexicaanse stijl vegan bowl." },
   ],
   mediterraan: [
     { name:"Griekse salade", time:"10 min", cal:260, ingredients:["Tomaat","Komkommer","Feta","Ui","Olijfolie"], desc:"Klassieke Griekse salade met feta." },
@@ -583,20 +603,16 @@ const RECIPES = {
     { name:"Feta salade", time:"10 min", cal:290, ingredients:["Spinazie","Feta","Walnoten","Olijfolie","Citroen"], desc:"Frisse spinaziesalade met feta." },
     { name:"Linzen stoofpot", time:"40 min", cal:400, ingredients:["Linzen","Tomaat","Ui","Knoflook","Olijfolie"], desc:"Hartige mediterrane linzenstoofpot." },
     { name:"Mediterraanse omelet", time:"15 min", cal:330, ingredients:["Ei","Tomaat","Olijfolie","Spinazie","Feta"], desc:"Omelet met Griekse toppings." },
-  ],
-  glutenvrij: [
-    { name:"Rijst met kip", time:"25 min", cal:420, ingredients:["Rijst","Kipfilet","Paprika","Ui","Olijfolie"], desc:"Simpele glutenvrije rijstschotel." },
-    { name:"Quinoa salade", time:"15 min", cal:370, ingredients:["Quinoa","Komkommer","Tomaat","Citroen","Olijfolie"], desc:"Lichte glutenvrije quinoasalade." },
-    { name:"Omelet met groenten", time:"10 min", cal:280, ingredients:["Ei","Paprika","Champignons","Spinazie"], desc:"Glutenvrije omelet vol groenten." },
-    { name:"Zalm met rijst", time:"20 min", cal:460, ingredients:["Zalm","Rijst","Spinazie","Citroen"], desc:"Simpele zalmmaaltijd met rijst." },
-    { name:"Aardappelsoep", time:"30 min", cal:290, ingredients:["Aardappel","Ui","Knoflook","Olijfolie"], desc:"Romige aardappelsoep, glutenvrij." },
-  ],
-  lactosevrij: [
-    { name:"Kip stir-fry", time:"20 min", cal:360, ingredients:["Kipfilet","Paprika","Broccoli","Ui","Olijfolie"], desc:"Snelle roerbak zonder lactose." },
-    { name:"Avocado salade", time:"10 min", cal:260, ingredients:["Avocado","Tomaat","Komkommer","Citroen","Olijfolie"], desc:"Frisse salade zonder zuivel." },
-    { name:"Tonijn met rijst", time:"15 min", cal:410, ingredients:["Tonijn","Rijst","Komkommer","Citroen"], desc:"Makkelijke tonijnmaaltijd." },
-    { name:"Groentewok", time:"20 min", cal:230, ingredients:["Broccoli","Paprika","Champignons","Ui","Olijfolie"], desc:"Lichte wok zonder lactose." },
-    { name:"Zalm met groenten", time:"25 min", cal:400, ingredients:["Zalm","Courgette","Tomaat","Citroen","Olijfolie"], desc:"Gebakken zalm met mediterrane groenten." },
+    { name:"Sardines met citroen", time:"10 min", cal:270, ingredients:["Sardines","Citroen","Olijfolie","Rucola"], desc:"Eenvoudig Italiaans antipasto." },
+    { name:"Gevulde aubergine", time:"35 min", cal:310, ingredients:["Aubergine","Gehakt","Tomaat","Feta","Knoflook"], desc:"Klassieke gevulde aubergine." },
+    { name:"Makreel met venkel", time:"25 min", cal:370, ingredients:["Makreel","Venkel","Citroen","Olijfolie"], desc:"Vette vis met aromatische venkel." },
+    { name:"Rucola granaatappel", time:"10 min", cal:220, ingredients:["Rucola","Granaatappel","Pijnboompitten","Olijfolie","Citroen"], desc:"Elegante Italiaanse salade." },
+    { name:"Rode kool stoofpot", time:"40 min", cal:290, ingredients:["Rode kool","Ui","Olijfolie","Citroen","Knoflook"], desc:"Mediterraanse wintergroenteschotel." },
+    { name:"Witlof met ansjovis", time:"15 min", cal:240, ingredients:["Witlof","Olijfolie","Citroen","Knoflook"], desc:"Bittere witlof met mediterrane smaken." },
+    { name:"Spruiten met tahini", time:"20 min", cal:280, ingredients:["Spruiten","Tahini","Citroen","Knoflook","Sesamzaad"], desc:"Midden-Oosterse twist op spruiten." },
+    { name:"Pompoen feta schotel", time:"30 min", cal:320, ingredients:["Pompoen","Feta","Olijfolie","Knoflook","Walnoten"], desc:"Kleurrijke herfstschotel met feta." },
+    { name:"Kabeljauw tomaat", time:"25 min", cal:290, ingredients:["Kabeljauw","Tomaat","Olijfolie","Knoflook","Citroen"], desc:"Lichte witte vis in tomatensaus." },
+    { name:"Prei met feta", time:"20 min", cal:250, ingredients:["Prei","Feta","Olijfolie","Citroen","Knoflook"], desc:"Warme preischotel met verkruimelde feta." },
   ],
   paleo: [
     { name:"Kip met zoete aardappel", time:"30 min", cal:420, ingredients:["Kipfilet","Zoete aardappel","Ui","Knoflook","Olijfolie"], desc:"Geroosterde kip met gekarameliseerde zoete aardappel." },
@@ -604,41 +620,135 @@ const RECIPES = {
     { name:"Paleo bowl", time:"20 min", cal:390, ingredients:["Kipfilet","Spinazie","Paprika","Amandelen","Olijfolie"], desc:"Voedzame paleo bowl met geroosterde kip." },
     { name:"Eieren met groenten", time:"10 min", cal:310, ingredients:["Ei","Paprika","Spinazie","Champignons","Olijfolie"], desc:"Gebakken eieren met verse seizoensgroenten." },
     { name:"Gegrilde zalm salade", time:"15 min", cal:350, ingredients:["Zalm","Komkommer","Tomaat","Walnoten","Citroen"], desc:"Frisse salade met gegrilde zalm en walnoten." },
+    { name:"Paleo ontbijt", time:"10 min", cal:360, ingredients:["Ei","Spek","Avocado","Tomaat","Spinazie"], desc:"Vullend paleo ontbijt zonder granen." },
+    { name:"Biefstuk met groenten", time:"20 min", cal:450, ingredients:["Biefstuk","Courgette","Paprika","Knoflook","Olijfolie"], desc:"Klassieke paleo maaltijd met biefstuk." },
+    { name:"Makreel salade paleo", time:"10 min", cal:330, ingredients:["Makreel","Rucola","Komkommer","Citroen","Olijfolie"], desc:"Snelle paleo salade met vette vis." },
+    { name:"Pompoen stoofpot", time:"35 min", cal:380, ingredients:["Kipfilet","Pompoen","Ui","Knoflook","Olijfolie"], desc:"Warme herfststoofpot zonder granen." },
+    { name:"Garnalen met groenten", time:"15 min", cal:280, ingredients:["Garnalen","Paprika","Courgette","Knoflook","Olijfolie"], desc:"Snelle paleo wok zonder soja." },
+    { name:"Kip rode kool paleo", time:"30 min", cal:360, ingredients:["Kipfilet","Rode kool","Appel","Ui","Olijfolie"], desc:"Hartige paleo stoofschotel." },
+    { name:"Spruiten met noten", time:"20 min", cal:310, ingredients:["Spruiten","Amandelen","Spek","Olijfolie","Knoflook"], desc:"Krokante paleo winterschotel." },
+    { name:"Witlof met ei", time:"15 min", cal:280, ingredients:["Witlof","Ei","Ham","Olijfolie","Citroen"], desc:"Snelle paleo lunch met witlof." },
+    { name:"Sardines met pompoen", time:"25 min", cal:320, ingredients:["Sardines","Pompoen","Rucola","Citroen","Olijfolie"], desc:"Voedzame paleo combinatie." },
+    { name:"Venkel kip schotel", time:"30 min", cal:370, ingredients:["Kipfilet","Venkel","Tomaat","Knoflook","Olijfolie"], desc:"Aromatische paleo schotel met venkel." },
   ],
   caloriearm: [
     { name:"Kip met groenten", time:"20 min", cal:280, ingredients:["Kipfilet","Broccoli","Paprika","Courgette","Olijfolie"], desc:"Lichte kipschotel met verse seizoensgroenten." },
-    { name:"Tonijn salade", time:"10 min", cal:220, ingredients:["Tonijn","Komkommer","Tomaat","Citroen","Sla"], desc:"Frisse en lichte tonijnsalade zonder dressing." },
-    { name:"Groentesoup", time:"25 min", cal:150, ingredients:["Spinazie","Courgette","Tomaat","Ui","Knoflook"], desc:"Lichte groentebouillon boordevol vitamines." },
+    { name:"Tonijn salade", time:"10 min", cal:220, ingredients:["Tonijn","Komkommer","Tomaat","Citroen","Sla"], desc:"Frisse en lichte tonijnsalade." },
+    { name:"Groentebouillon", time:"25 min", cal:150, ingredients:["Spinazie","Courgette","Tomaat","Ui","Knoflook"], desc:"Lichte groentesoep boordevol vitamines." },
     { name:"Eiwit ontbijt", time:"10 min", cal:260, ingredients:["Ei","Spinazie","Tomaat","Paprika"], desc:"Laag-calorie omelet met verse groenten." },
-    { name:"Zalm met salade", time:"15 min", cal:310, ingredients:["Zalm","Sla","Komkommer","Citroen","Olijfolie"], desc:"Licht en voedzaam met gezonde vetten." },
+    { name:"Zalm met salade", time:"15 min", cal:310, ingredients:["Zalm","Sla","Komkommer","Citroen","Olijfolie"], desc:"Licht en voedzaam." },
+    { name:"Rode kool soep", time:"30 min", cal:140, ingredients:["Rode kool","Ui","Knoflook","Olijfolie","Citroen"], desc:"Antioxidantrijke lichte soep." },
+    { name:"Kabeljauw met groenten", time:"20 min", cal:240, ingredients:["Kabeljauw","Courgette","Tomaat","Citroen","Olijfolie"], desc:"Magere vis met lichte groenten." },
+    { name:"Rucola salade", time:"10 min", cal:160, ingredients:["Rucola","Tomaat","Komkommer","Citroen","Olijfolie"], desc:"Nul-punten salade boordevol smaak." },
+    { name:"Spruiten met kipfilet", time:"25 min", cal:290, ingredients:["Spruiten","Kipfilet","Knoflook","Olijfolie"], desc:"Laag-calorie wintermaaltijd." },
+    { name:"Pompoen soep caloriearm", time:"25 min", cal:130, ingredients:["Pompoen","Ui","Knoflook","Olijfolie"], desc:"Romige soep zonder room." },
+    { name:"Waterkers salade", time:"10 min", cal:120, ingredients:["Rucola","Radijs","Komkommer","Citroen","Olijfolie"], desc:"Superfrisse calorievrije salade." },
+    { name:"Kip venkel schotel", time:"25 min", cal:270, ingredients:["Kipfilet","Venkel","Tomaat","Olijfolie","Citroen"], desc:"Lichte mediterrane schotel." },
+    { name:"Witlof met tonijn", time:"15 min", cal:200, ingredients:["Witlof","Tonijn","Citroen","Olijfolie"], desc:"Lichte lunch met bittere witlof." },
+    { name:"Mais komkommer salade", time:"10 min", cal:170, ingredients:["Mais","Komkommer","Tomaat","Citroen","Olijfolie"], desc:"Frisse zomerse salade." },
+    { name:"Bleekselderij soep", time:"25 min", cal:110, ingredients:["Bleekselderij","Ui","Knoflook","Olijfolie"], desc:"Ultralight detox soep." },
   ],
   punten: [
-    { name:"Nul-punten soep", time:"25 min", cal:120, ingredients:["Kipfilet","Spinazie","Tomaat","Ui","Broccoli"], desc:"Klassieke nul-punten soep vol groenten en kip." },
-    { name:"Nul-punten salade", time:"10 min", cal:100, ingredients:["Sla","Tomaat","Komkommer","Paprika","Citroen"], desc:"Onbeperkt te eten frisse salade zonder punten." },
-    { name:"Gevulde paprika", time:"30 min", cal:280, ingredients:["Paprika","Kipfilet","Rijst","Tomaat","Ui"], desc:"Gevulde paprika's met kip en rijst — laag in punten." },
-    { name:"Kwark met fruit", time:"5 min", cal:180, ingredients:["Yoghurt","Aardbei","Blauwe bessen","Banaan"], desc:"Eiwitrijk dessert of ontbijt met weinig punten." },
-    { name:"Kip stir-fry", time:"20 min", cal:240, ingredients:["Kipfilet","Paprika","Broccoli","Courgette","Olijfolie"], desc:"Kleurrijke roerbak, laag in punten en voedzaam." },
+    { name:"Nul-punten soep", time:"25 min", cal:120, ingredients:["Kipfilet","Spinazie","Tomaat","Ui","Broccoli"], desc:"Klassieke nul-punten soep vol groenten." },
+    { name:"Nul-punten salade", time:"10 min", cal:100, ingredients:["Sla","Tomaat","Komkommer","Paprika","Citroen"], desc:"Onbeperkt te eten frisse salade." },
+    { name:"Gevulde paprika", time:"30 min", cal:280, ingredients:["Paprika","Kipfilet","Rijst","Tomaat","Ui"], desc:"Gevulde paprika's met kip en rijst." },
+    { name:"Kwark met fruit", time:"5 min", cal:180, ingredients:["Kwark","Aardbei","Blauwe bessen","Banaan"], desc:"Eiwitrijk dessert met weinig punten." },
+    { name:"Kip stir-fry", time:"20 min", cal:240, ingredients:["Kipfilet","Paprika","Broccoli","Courgette","Olijfolie"], desc:"Kleurrijke roerbak, laag in punten." },
+    { name:"Rode kool nul-punten", time:"20 min", cal:110, ingredients:["Rode kool","Ui","Appel","Citroen"], desc:"Nul-punten bijgerecht van rode kool." },
+    { name:"Spruiten soep", time:"25 min", cal:130, ingredients:["Spruiten","Ui","Knoflook","Olijfolie"], desc:"Nul-punten spruitjessoep." },
+    { name:"Kipfilet salade", time:"15 min", cal:220, ingredients:["Kipfilet","Rucola","Tomaat","Komkommer","Citroen"], desc:"Laag-punten maaltijdsalade." },
+    { name:"Pompoen curry", time:"30 min", cal:260, ingredients:["Pompoen","Ui","Knoflook","Tomaat","Spinazie"], desc:"Plantaardige curry met pompoen." },
+    { name:"Witlof nul-punten", time:"15 min", cal:100, ingredients:["Witlof","Tomaat","Citroen","Olijfolie"], desc:"Lichte witlofsalade als nul-punten snack." },
+    { name:"Mais tomaat salade", time:"10 min", cal:150, ingredients:["Mais","Tomaat","Komkommer","Citroen","Olijfolie"], desc:"Zomerse nul-punten salade." },
+    { name:"Groentesoep punten", time:"20 min", cal:120, ingredients:["Prei","Courgette","Ui","Knoflook","Tomaat"], desc:"Rijke groentesoep met nul punten." },
+    { name:"Kabeljauw salade", time:"15 min", cal:200, ingredients:["Kabeljauw","Komkommer","Tomaat","Citroen","Olijfolie"], desc:"Lichte vismaaltijd met weinig punten." },
+    { name:"Ei met groenten", time:"10 min", cal:190, ingredients:["Ei","Spinazie","Tomaat","Paprika","Olijfolie"], desc:"Eiwitrijke maaltijd laag in punten." },
+    { name:"Bleekselderij soep punten", time:"20 min", cal:90, ingredients:["Bleekselderij","Ui","Knoflook","Olijfolie"], desc:"Bijna nul-punten detox soep." },
   ],
   fodmap: [
     { name:"FODMAP kipschotel", time:"25 min", cal:370, ingredients:["Kipfilet","Rijst","Courgette","Paprika","Olijfolie"], desc:"Veilige kipschotel zonder FODMAP-rijke ingrediënten." },
-    { name:"FODMAP salade", time:"10 min", cal:230, ingredients:["Sla","Komkommer","Tomaat","Zalm","Citroen"], desc:"Frisse salade zonder ui, knoflook of peulvruchten." },
-    { name:"Rijst met spinazie", time:"20 min", cal:320, ingredients:["Rijst","Spinazie","Olijfolie","Citroen"], desc:"Simpel en veilig voor mensen met prikkelbare darm." },
-    { name:"Eieren met courgette", time:"15 min", cal:290, ingredients:["Ei","Courgette","Paprika","Olijfolie"], desc:"FODMAP-vriendelijke omelet met lage FODMAP groenten." },
-    { name:"Aardbeien smoothie", time:"5 min", cal:160, ingredients:["Aardbei","Blauwe bessen","Amandelmelk","Banaan"], desc:"FODMAP-vriendelijke smoothie met lage FODMAP fruit." },
+    { name:"FODMAP salade", time:"10 min", cal:230, ingredients:["Sla","Komkommer","Tomaat","Zalm","Citroen"], desc:"Frisse salade zonder ui of knoflook." },
+    { name:"Rijst met spinazie", time:"20 min", cal:320, ingredients:["Rijst","Spinazie","Olijfolie","Citroen"], desc:"Simpel en veilig voor prikkelbare darm." },
+    { name:"Eieren met courgette", time:"15 min", cal:290, ingredients:["Ei","Courgette","Paprika","Olijfolie"], desc:"FODMAP-vriendelijke omelet." },
+    { name:"Aardbeien smoothie", time:"5 min", cal:160, ingredients:["Aardbei","Blauwe bessen","Amandelmelk","Banaan"], desc:"FODMAP-vriendelijke smoothie." },
+    { name:"Kabeljauw met rijst", time:"25 min", cal:340, ingredients:["Kabeljauw","Rijst","Courgette","Citroen","Olijfolie"], desc:"Veilige vismaaltijd voor gevoelige darmen." },
+    { name:"Mais salade FODMAP", time:"10 min", cal:210, ingredients:["Mais","Komkommer","Tomaat","Citroen","Olijfolie"], desc:"Laag-FODMAP zomersalade." },
+    { name:"Kippensoep FODMAP", time:"30 min", cal:260, ingredients:["Kipfilet","Rijst","Courgette","Spinazie","Olijfolie"], desc:"Veilige kippensoep zonder ui of knoflook." },
+    { name:"Pompoen rijst schotel", time:"30 min", cal:350, ingredients:["Pompoen","Rijst","Olijfolie","Citroen"], desc:"Laag-FODMAP herfstschotel." },
+    { name:"Radijs komkommer salade", time:"10 min", cal:90, ingredients:["Radijs","Komkommer","Citroen","Olijfolie"], desc:"Ultralight FODMAP-vriendelijke salade." },
+    { name:"Zalm met courgette FODMAP", time:"20 min", cal:380, ingredients:["Zalm","Courgette","Citroen","Olijfolie"], desc:"Eenvoudige FODMAP-veilige vismaaltijd." },
+    { name:"Quinoa salade FODMAP", time:"15 min", cal:310, ingredients:["Quinoa","Komkommer","Tomaat","Citroen","Olijfolie"], desc:"Voedzame FODMAP-vriendelijke salade." },
+    { name:"Spruiten FODMAP", time:"20 min", cal:180, ingredients:["Spruiten","Olijfolie","Citroen"], desc:"Kleine portie spruiten is FODMAP-veilig." },
+    { name:"Mais met kipfilet", time:"20 min", cal:360, ingredients:["Mais","Kipfilet","Paprika","Olijfolie","Citroen"], desc:"Kleurrijke FODMAP-maaltijd." },
+    { name:"Wortels met ei FODMAP", time:"15 min", cal:260, ingredients:["Wortel","Ei","Olijfolie","Citroen"], desc:"Simpele FODMAP-veilige lunch." },
   ],
   antiinfl: [
-    { name:"Anti-inflam. bowl", time:"20 min", cal:420, ingredients:["Zalm","Quinoa","Spinazie","Blauwe bessen","Walnoten"], desc:"Superfood bowl boordevol ontstekingsremmende stoffen." },
+    { name:"Anti-inflam. bowl", time:"20 min", cal:420, ingredients:["Zalm","Quinoa","Spinazie","Blauwe bessen","Walnoten"], desc:"Superfood bowl vol ontstekingsremmers." },
     { name:"Kurkuma kip", time:"25 min", cal:360, ingredients:["Kipfilet","Spinazie","Olijfolie","Citroen","Knoflook"], desc:"Gekruide kip met anti-inflammatoire kruiden." },
     { name:"Walnoten salade", time:"10 min", cal:340, ingredients:["Spinazie","Walnoten","Blauwe bessen","Citroen","Olijfolie"], desc:"Salade vol omega-3 en antioxidanten." },
-    { name:"Groene thee smoothie", time:"5 min", cal:180, ingredients:["Groene thee","Blauwe bessen","Spinazie","Banaan"], desc:"Antioxidantrijke smoothie voor een energieke start." },
-    { name:"Mediterrane zalm", time:"20 min", cal:440, ingredients:["Zalm","Tomaat","Olijfolie","Citroen","Knoflook"], desc:"Omega-3 rijke zalmschotel met mediterrane kruiden." },
+    { name:"Groene thee smoothie", time:"5 min", cal:180, ingredients:["Groene thee","Blauwe bessen","Spinazie","Banaan"], desc:"Antioxidantrijke smoothie." },
+    { name:"Mediterrane zalm", time:"20 min", cal:440, ingredients:["Zalm","Tomaat","Olijfolie","Citroen","Knoflook"], desc:"Omega-3 rijke zalmschotel." },
+    { name:"Granaatappel salade anti", time:"10 min", cal:250, ingredients:["Rucola","Granaatappel","Walnoten","Olijfolie","Citroen"], desc:"Krachtige antioxidantensalade." },
+    { name:"Makreel met rode kool", time:"25 min", cal:380, ingredients:["Makreel","Rode kool","Citroen","Olijfolie","Walnoten"], desc:"Dubbele dosis antioxidanten en omega-3." },
+    { name:"Spruiten walnoten schotel", time:"20 min", cal:310, ingredients:["Spruiten","Walnoten","Olijfolie","Citroen","Knoflook"], desc:"Rijk aan antioxidanten en gezonde vetten." },
+    { name:"Kurkuma pompoen soep", time:"30 min", cal:220, ingredients:["Pompoen","Olijfolie","Knoflook","Ui","Amandelmelk"], desc:"Ontstekingsremmende gouden soep." },
+    { name:"Sardines spinazie", time:"15 min", cal:300, ingredients:["Sardines","Spinazie","Citroen","Olijfolie","Knoflook"], desc:"Dubbele omega-3 bron met ijzerrijke spinazie." },
+    { name:"Blauwe bessen kwark", time:"5 min", cal:200, ingredients:["Kwark","Blauwe bessen","Walnoten"], desc:"Ontbijt vol antioxidanten en eiwitten." },
+    { name:"Venkel zalm schotel", time:"25 min", cal:390, ingredients:["Zalm","Venkel","Citroen","Olijfolie","Knoflook"], desc:"Venkel heeft eigen ontstekingsremmende werking." },
+    { name:"Rode kool walnoten salade", time:"15 min", cal:270, ingredients:["Rode kool","Walnoten","Appel","Citroen","Olijfolie"], desc:"Anthocyanen en omega-3 in één salade." },
+    { name:"Kip met kurkuma rijst", time:"30 min", cal:400, ingredients:["Kipfilet","Zilvervliesrijst","Knoflook","Olijfolie"], desc:"Anti-inflammatoire rijstschotel." },
+    { name:"Ananas smoothie anti", time:"5 min", cal:190, ingredients:["Ananas","Spinazie","Amandelmelk","Citroen"], desc:"Bromelaïne uit ananas werkt entstekingsremmend." },
   ],
   dash: [
-    { name:"DASH kipschotel", time:"25 min", cal:390, ingredients:["Kipfilet","Volkoren brood","Spinazie","Tomaat","Olijfolie"], desc:"Hartvriendelijk en bloeddrukverlagend DASH recept." },
-    { name:"DASH salade", time:"10 min", cal:260, ingredients:["Spinazie","Zalm","Blauwe bessen","Walnoten","Citroen"], desc:"Kaliumrijke salade perfect voor het DASH dieet." },
-    { name:"Havermout ontbijt", time:"10 min", cal:320, ingredients:["Havermout","Banaan","Blauwe bessen","Amandelmelk"], desc:"Vezels en kalium voor gezonde bloeddruk." },
-    { name:"Linzen soep", time:"35 min", cal:340, ingredients:["Linzen","Tomaat","Spinazie","Ui","Olijfolie"], desc:"Kaliumrijke soep met weinig zout voor DASH." },
-    { name:"Kip met groenten", time:"25 min", cal:370, ingredients:["Kipfilet","Broccoli","Zoete aardappel","Olijfolie"], desc:"Volledig DASH-maaltijd met weinig natrium." },
+    { name:"DASH kipschotel", time:"25 min", cal:390, ingredients:["Kipfilet","Volkoren brood","Spinazie","Tomaat","Olijfolie"], desc:"Hartvriendelijk DASH recept." },
+    { name:"DASH salade", time:"10 min", cal:260, ingredients:["Spinazie","Zalm","Blauwe bessen","Walnoten","Citroen"], desc:"Kaliumrijke salade voor DASH." },
+    { name:"Havermout ontbijt DASH", time:"10 min", cal:320, ingredients:["Havermout","Banaan","Blauwe bessen","Amandelmelk"], desc:"Vezels en kalium voor gezonde bloeddruk." },
+    { name:"Linzen soep DASH", time:"35 min", cal:340, ingredients:["Linzen","Tomaat","Spinazie","Ui","Olijfolie"], desc:"Kaliumrijke soep met weinig zout." },
+    { name:"Kip met groenten DASH", time:"25 min", cal:370, ingredients:["Kipfilet","Broccoli","Zoete aardappel","Olijfolie"], desc:"Volledig DASH-maaltijd." },
+    { name:"Volkoren pasta groenten", time:"25 min", cal:420, ingredients:["Volkoren brood","Courgette","Tomaat","Knoflook","Olijfolie"], desc:"Volkoren pasta met verse saus." },
+    { name:"Kabeljauw met broccoli DASH", time:"20 min", cal:290, ingredients:["Kabeljauw","Broccoli","Citroen","Olijfolie"], desc:"Hartvriendelijke vismaaltijd." },
+    { name:"Pompoen soep DASH", time:"25 min", cal:200, ingredients:["Pompoen","Ui","Knoflook","Olijfolie","Amandelmelk"], desc:"Kaliumrijke soep zonder te veel zout." },
+    { name:"Spruiten met quinoa DASH", time:"25 min", cal:350, ingredients:["Spruiten","Quinoa","Olijfolie","Citroen","Knoflook"], desc:"Vezelrijke DASH combinatie." },
+    { name:"Granaatappel kwark", time:"5 min", cal:220, ingredients:["Kwark","Granaatappel","Blauwe bessen","Walnoten"], desc:"Kaliumrijke ontbijt of dessert." },
+    { name:"Prei soep DASH", time:"25 min", cal:180, ingredients:["Prei","Aardappel","Ui","Olijfolie"], desc:"Laagzout DASH soep." },
+    { name:"Zalm quinoa bowl DASH", time:"25 min", cal:450, ingredients:["Zalm","Quinoa","Spinazie","Citroen","Olijfolie"], desc:"Complete DASH maaltijd vol voedingsstoffen." },
+    { name:"Mais spinazie omelet DASH", time:"15 min", cal:310, ingredients:["Ei","Mais","Spinazie","Olijfolie"], desc:"Kaliumrijke omelet voor DASH." },
+    { name:"Rode kool schotel DASH", time:"30 min", cal:260, ingredients:["Rode kool","Appel","Ui","Olijfolie","Citroen"], desc:"Antioxidantrijke bijgerecht voor DASH." },
+    { name:"Walnoten haver ontbijt", time:"10 min", cal:380, ingredients:["Havermout","Walnoten","Banaan","Amandelmelk"], desc:"Omega-3 en vezels voor gezonde bloeddruk." },
+  ],
+  glutenvrij: [
+    { name:"Rijst met kip", time:"25 min", cal:420, ingredients:["Rijst","Kipfilet","Paprika","Ui","Olijfolie"], desc:"Simpele glutenvrije rijstschotel." },
+    { name:"Quinoa salade", time:"15 min", cal:370, ingredients:["Quinoa","Komkommer","Tomaat","Citroen","Olijfolie"], desc:"Lichte glutenvrije quinoasalade." },
+    { name:"Omelet met groenten", time:"10 min", cal:280, ingredients:["Ei","Paprika","Champignons","Spinazie"], desc:"Glutenvrije omelet vol groenten." },
+    { name:"Zalm met rijst", time:"20 min", cal:460, ingredients:["Zalm","Rijst","Spinazie","Citroen"], desc:"Simpele zalmmaaltijd met rijst." },
+    { name:"Aardappelsoep", time:"30 min", cal:290, ingredients:["Aardappel","Ui","Knoflook","Olijfolie"], desc:"Romige aardappelsoep, glutenvrij." },
+    { name:"Pompoen quinoa schotel", time:"30 min", cal:380, ingredients:["Pompoen","Quinoa","Spinazie","Olijfolie","Knoflook"], desc:"Voedzame glutenvrije herfstmaaltijd." },
+    { name:"Kip mais salade", time:"20 min", cal:350, ingredients:["Kipfilet","Mais","Komkommer","Tomaat","Citroen"], desc:"Kleurrijke glutenvrije maaltijdsalade." },
+    { name:"Rode kool met kipfilet", time:"25 min", cal:340, ingredients:["Rode kool","Kipfilet","Appel","Olijfolie","Citroen"], desc:"Glutenvrije stoofschotel." },
+    { name:"Zilvervliesrijst bowl", time:"20 min", cal:400, ingredients:["Zilvervliesrijst","Kipfilet","Broccoli","Olijfolie","Knoflook"], desc:"Voedzame glutenvrije bowl." },
+    { name:"Spruiten met ei glutenvrij", time:"20 min", cal:290, ingredients:["Spruiten","Ei","Olijfolie","Knoflook"], desc:"Simpele glutenvrije wintermaaltijd." },
+    { name:"Mais omelet", time:"15 min", cal:310, ingredients:["Ei","Mais","Paprika","Olijfolie"], desc:"Kleurrijke glutenvrije omelet." },
+    { name:"Kabeljauw met quinoa", time:"25 min", cal:370, ingredients:["Kabeljauw","Quinoa","Spinazie","Citroen","Olijfolie"], desc:"Glutenvrije vismaaltijd." },
+    { name:"Pompoen soep glutenvrij", time:"25 min", cal:210, ingredients:["Pompoen","Ui","Knoflook","Olijfolie"], desc:"Romige glutenvrije herfstsoep." },
+    { name:"Quinoa met garnalen", time:"20 min", cal:390, ingredients:["Quinoa","Garnalen","Courgette","Citroen","Olijfolie"], desc:"Glutenvrije zeevruchtenmaaltijd." },
+    { name:"Mais avocado salade gv", time:"10 min", cal:300, ingredients:["Mais","Avocado","Tomaat","Citroen","Olijfolie"], desc:"Frisse glutenvrije zomersalade." },
+  ],
+  lactosevrij: [
+    { name:"Kip stir-fry", time:"20 min", cal:360, ingredients:["Kipfilet","Paprika","Broccoli","Ui","Olijfolie"], desc:"Snelle roerbak zonder lactose." },
+    { name:"Avocado salade", time:"10 min", cal:260, ingredients:["Avocado","Tomaat","Komkommer","Citroen","Olijfolie"], desc:"Frisse salade zonder zuivel." },
+    { name:"Tonijn met rijst", time:"15 min", cal:410, ingredients:["Tonijn","Rijst","Komkommer","Citroen"], desc:"Makkelijke tonijnmaaltijd." },
+    { name:"Groentewok", time:"20 min", cal:230, ingredients:["Broccoli","Paprika","Champignons","Ui","Olijfolie"], desc:"Lichte wok zonder lactose." },
+    { name:"Zalm met groenten", time:"25 min", cal:400, ingredients:["Zalm","Courgette","Tomaat","Citroen","Olijfolie"], desc:"Gebakken zalm met mediterrane groenten." },
+    { name:"Rode kool soep lv", time:"25 min", cal:150, ingredients:["Rode kool","Ui","Knoflook","Olijfolie","Citroen"], desc:"Lactosevrije antioxidantensoep." },
+    { name:"Kipfilet mais salade", time:"20 min", cal:370, ingredients:["Kipfilet","Mais","Tomaat","Komkommer","Olijfolie"], desc:"Lactosevrije zomersalade." },
+    { name:"Spruiten met kipfilet lv", time:"25 min", cal:310, ingredients:["Spruiten","Kipfilet","Olijfolie","Knoflook","Citroen"], desc:"Lactosevrije wintermaaltijd." },
+    { name:"Garnalen met quinoa", time:"20 min", cal:380, ingredients:["Garnalen","Quinoa","Spinazie","Citroen","Olijfolie"], desc:"Lactosevrije zeevruchtenmaaltijd." },
+    { name:"Makreel salade lv", time:"10 min", cal:340, ingredients:["Makreel","Rucola","Tomaat","Citroen","Olijfolie"], desc:"Lactosevrije salade met vette vis." },
+    { name:"Pompoen soep lv", time:"25 min", cal:190, ingredients:["Pompoen","Ui","Knoflook","Olijfolie"], desc:"Romige pompoensoep zonder room." },
+    { name:"Prei soep lactosevrij", time:"25 min", cal:170, ingredients:["Prei","Aardappel","Olijfolie","Ui"], desc:"Klassieke preisoep zonder boter of room." },
+    { name:"Kabeljauw tomaat lv", time:"20 min", cal:260, ingredients:["Kabeljauw","Tomaat","Knoflook","Olijfolie","Citroen"], desc:"Lichte lactosevrije vismaaltijd." },
+    { name:"Witlof met tonijn lv", time:"15 min", cal:220, ingredients:["Witlof","Tonijn","Citroen","Olijfolie"], desc:"Snelle lactosevrije lunch." },
+    { name:"Mais spinazie wok lv", time:"20 min", cal:280, ingredients:["Mais","Spinazie","Ei","Olijfolie","Knoflook"], desc:"Kleurrijke lactosevrije wok." },
   ],
   suikervrij: [
     { name:"Kipfilet met sla", time:"15 min", cal:300, ingredients:["Kipfilet","Sla","Komkommer","Olijfolie","Citroen"], desc:"Lichte suikervrije maaltijdsalade." },
@@ -646,6 +756,16 @@ const RECIPES = {
     { name:"Noten mix", time:"2 min", cal:480, ingredients:["Amandelen","Walnoten","Blauwe bessen"], desc:"Snelle suikervrije snack." },
     { name:"Zalm salade", time:"15 min", cal:370, ingredients:["Zalm","Spinazie","Komkommer","Olijfolie","Citroen"], desc:"Frisse salade zonder suikers." },
     { name:"Groentebouillon", time:"30 min", cal:80, ingredients:["Ui","Knoflook","Spinazie","Olijfolie"], desc:"Warme suikervrije bouillon." },
+    { name:"Rode kool suikervrij", time:"20 min", cal:140, ingredients:["Rode kool","Ui","Olijfolie","Citroen","Knoflook"], desc:"Suikervrije bijgerecht van rode kool." },
+    { name:"Kip met spruiten sv", time:"25 min", cal:310, ingredients:["Kipfilet","Spruiten","Olijfolie","Knoflook","Citroen"], desc:"Suikervrije wintermaaltijd." },
+    { name:"Makreel rucola salade", time:"10 min", cal:320, ingredients:["Makreel","Rucola","Citroen","Olijfolie"], desc:"Suikervrije salade met vette vis." },
+    { name:"Venkel kipschotel sv", time:"30 min", cal:330, ingredients:["Kipfilet","Venkel","Olijfolie","Citroen","Knoflook"], desc:"Aromatische suikervrije schotel." },
+    { name:"Witlof ei suikervrij", time:"15 min", cal:260, ingredients:["Witlof","Ei","Olijfolie","Citroen"], desc:"Snelle suikervrije lunch." },
+    { name:"Pompoen kipsoep sv", time:"30 min", cal:270, ingredients:["Pompoen","Kipfilet","Ui","Olijfolie","Knoflook"], desc:"Suikervrije herfstsoep." },
+    { name:"Mais avocado sv", time:"10 min", cal:310, ingredients:["Mais","Avocado","Citroen","Olijfolie"], desc:"Suikervrije snack of lichte lunch." },
+    { name:"Kabeljauw met groenten sv", time:"20 min", cal:250, ingredients:["Kabeljauw","Courgette","Tomaat","Olijfolie","Citroen"], desc:"Magere suikervrije vismaaltijd." },
+    { name:"Blauwe bessen kwark sv", time:"5 min", cal:190, ingredients:["Kwark","Blauwe bessen","Walnoten"], desc:"Suikervrij ontbijt of dessert." },
+    { name:"Sardines rode kool sv", time:"15 min", cal:280, ingredients:["Sardines","Rode kool","Citroen","Olijfolie"], desc:"Suikervrije salade vol omega-3." },
   ],
 };
 
@@ -700,11 +820,11 @@ const REVIEWS = [
 
 const PRICING = [
   { id:"gratis", label:"Gratis", price:"€0", period:"voor altijd", color:"#2d9e6b",
-    features:["✅ Productcheck (130+ producten)","✅ 7 diëten","✅ 8 allergenen","✅ Zwangerschapsmodus","✅ Dagelijkse tips","❌ Weekmenu planner","❌ Volledige recepten","❌ Favorieten opslaan","❌ Persoonlijk advies"] },
+    features:["✅ Productcheck (96+ producten)","✅ 13 diëten incl. FODMAP & DASH","✅ 8 allergenen check","✅ Zwangerschapsmodus","✅ VEVO maaltijdcheck","✅ Pesticideninfo per product","✅ Dagelijkse tips","❌ Recepten & weekmenu","❌ Doelen stellen","❌ Leefstijl module","❌ Supplementenadvies","❌ Persoonlijk advies"] },
   { id:"starter", label:"Starter", price:"€4,99", period:"per maand", color:"#f97316",
-    features:["✅ Alles van Gratis","✅ Weekmenu planner","✅ Recepten per dieet","✅ Intermittent fasting schema","✅ Favorieten opslaan","✅ Voortgang bijhouden","❌ Persoonlijk advies Amanda","❌ Prioriteit reactietijd"] },
+    features:["✅ Alles van Gratis","✅ Weekmenu planner + IF schema","✅ Recepten per dieet (60+)","✅ Doelen stellen & bijhouden","✅ Favorieten opslaan","✅ Voortgang bijhouden","❌ Leefstijl module (slaap/stress/beweging)","❌ Supplementenadvies","❌ Persoonlijk advies Amanda"] },
   { id:"pro", label:"Pro", price:"€7,99", period:"per maand", color:"#ec4899",
-    features:["✅ Alles van Starter","✅ Persoonlijk leefstijladvies","✅ Reactie binnen 3 werkdagen","✅ Maaltijd URL toevoegen","✅ Eigen maaltijden samenstellen","✅ Prioriteit in wachtrij"] },
+    features:["✅ Alles van Starter","✅ Leefstijl module — slaap, stress & beweging","✅ Supplementenadvies op maat","✅ Persoonlijk leefstijladvies van Amanda","✅ Reactie binnen 3 werkdagen","✅ Doelen delen met coach","✅ Maaltijd URL & eigen maaltijden","✅ Prioriteit in wachtrij"] },
 ];
 
 const SUPPLEMENTS = [
@@ -946,6 +1066,8 @@ export default function App() {
   const [scanning, setScanning]   = useState(false);
   const [scanResult, setScanResult] = useState(null);
   const [isPremium, setIsPremium] = useState(false);
+  const [isStarter, setIsStarter] = useState(false);
+  const hasStarter = isStarter || isPremium; // starter OR pro
   const [showPaywall, setShowPaywall] = useState(false);
   const [showLogin, setShowLogin] = useState(false);
   const [user, setUser]           = useState(null);
@@ -1008,7 +1130,7 @@ export default function App() {
 
   const redeemAccessCode = () => {
     if (accessCodeInput.trim().toUpperCase() === "VITAAL2026") {
-      setIsPremium(true);
+      setIsPremium(true); setIsStarter(true);
       setAccessCodeSuccess(true);
       setAccessCodeError("");
       setTimeout(() => { setShowAccessCode(false); setAccessCodeSuccess(false); setAccessCodeInput(""); }, 2000);
@@ -1072,6 +1194,7 @@ export default function App() {
         if (d.selectedDiets) setSelectedDiets(d.selectedDiets);
         if (d.selectedAllergies) setSelectedAllergies(d.selectedAllergies);
         if (d.isPremium) setIsPremium(d.isPremium);
+        if (d.isStarter) setIsStarter(d.isStarter);
         if (d.user) setUser(d.user);
         if (d.favorites) setFavorites(d.favorites);
         if (d.goals) setGoals(d.goals);
@@ -1087,7 +1210,7 @@ export default function App() {
       localStorage.setItem("vitaalcheck_data", JSON.stringify({
         weekMenu, checkinLog, history: history.slice(0,20),
         selectedDiets, selectedAllergies, isPremium, user,
-        favorites, onboarding: false, requestedProducts, goals
+        favorites, onboarding: false, requestedProducts, goals, isStarter
       }));
     } catch(e) { console.log("Save error:", e); }
   }, [weekMenu, checkinLog, history, selectedDiets, selectedAllergies, isPremium, user, favorites, requestedProducts]);
@@ -1151,6 +1274,7 @@ export default function App() {
     setShowPaywall(false);
   };
   const handlePremium = () => openWhatsApp("pro");
+  const handleStarterDemo = () => { setIsStarter(true); setShowPaywall(false); };
   const handleShare = (product, res) => { setShareProduct({ product, result: res }); setShowShare(true); };
   const toggleFavorite = (product) => {
     setFavorites(p => p.includes(product) ? p.filter(x=>x!==product) : [...p, product]);
@@ -1544,7 +1668,7 @@ export default function App() {
               </div>
             </div>
             <p style={{ margin:"0 0 10px", fontSize:13, color:"rgba(30,90,30,0.75)", lineHeight:1.7 }}>Ik ben Amanda, hardwerkende moeder van twee, met een achtergrond als sociaal werker, orthomoleculair therapeut en leefstijlcoach met een erkende opleiding.</p>
-            <p style={{ margin:"0 0 10px", fontSize:13, color:"rgba(30,90,30,0.75)", lineHeight:1.7 }}>Omdat mijn dagen al goed gevuld zijn, heb ik lang niet altijd tijd of zin om goed op een gezonde leefstijl te letten. Vragen als: mag ik dit wel of niet eten bij een bepaalde allergie of dieet? Wat voor recepten passen bij mij? Beweeg ik wel voldoende? Heb ik niet teveel stress en zo ja, wat doe ik daar dan aan? Dit allemaal bijhouden in minstens vijf verschillende apps waarvan de helft in het Engels is — het is al bijna een dagtaak op zichzelf.</p>
+            <p style={{ margin:"0 0 10px", fontSize:13, color:"rgba(30,90,30,0.75)", lineHeight:1.7 }}>Omdat mijn dagen al goed gevuld zijn, heb ik lang niet altijd tijd of zin om goed op een gezonde leefstijl te letten. Vragen als: mag ik dit wel of niet eten bij een bepaalde allergie of dieet? Wat voor recepten passen bij mij? Beweeg ik wel voldoende? Heb ik niet te veel stress en zo ja, wat doe ik daar dan aan? Dit allemaal bijhouden in minstens vijf verschillende apps waarvan de helft in het Engels is — het is al bijna een dagtaak op zichzelf.</p>
             <p style={{ margin:"0 0 10px", fontSize:13, color:"rgba(30,90,30,0.75)", lineHeight:1.7 }}>Ik dacht: <strong style={{ color:"#2d9e6b" }}>dat moet anders kunnen!</strong> En zo werd het idee voor VitaalCheck geboren.</p>
             <p style={{ margin:"0 0 10px", fontSize:13, color:"rgba(30,90,30,0.75)", lineHeight:1.7 }}>Ik hoop dat jullie de app net zo nuttig vinden als ik, en ik ontvang graag eventuele vragen en feedback.</p>
             <p style={{ margin:"0 0 6px", fontSize:13, color:"#2d9e6b", fontWeight:700, lineHeight:1.7, fontStyle:"italic" }}>"Diëten is goed voor een tijdje, maar een gezonde leefstijl is voor altijd!"</p>
@@ -1847,7 +1971,7 @@ export default function App() {
                           <button onClick={()=>handleShare(result.product, result)} style={{ flex:1, padding:"9px 14px", borderRadius:12, border:"1px solid rgba(45,158,107,0.25)", background:"rgba(45,158,107,0.06)", color:"#2d9e6b", fontSize:13, cursor:"pointer", display:"flex", alignItems:"center", justifyContent:"center", gap:5, fontWeight:600 }}>
                             📤 Delen
                           </button>
-                          <button onClick={()=>{ if(!isPremium){setShowPaywall(true);return;} toggleFavorite(result.product); }} style={{ flex:1, padding:"9px 14px", borderRadius:12, border:`1px solid ${favorites.includes(result.product) ? "rgba(236,72,153,0.4)" : "rgba(45,158,107,0.25)"}`, background: favorites.includes(result.product) ? "rgba(236,72,153,0.1)" : "rgba(45,158,107,0.06)", color: favorites.includes(result.product) ? "#ec4899" : "#2d9e6b", fontSize:13, cursor:"pointer", display:"flex", alignItems:"center", justifyContent:"center", gap:5, fontWeight:600 }}>
+                          <button onClick={()=>{ if(!hasStarter){setShowPaywall(true);return;} toggleFavorite(result.product); }} style={{ flex:1, padding:"9px 14px", borderRadius:12, border:`1px solid ${favorites.includes(result.product) ? "rgba(236,72,153,0.4)" : "rgba(45,158,107,0.25)"}`, background: favorites.includes(result.product) ? "rgba(236,72,153,0.1)" : "rgba(45,158,107,0.06)", color: favorites.includes(result.product) ? "#ec4899" : "#2d9e6b", fontSize:13, cursor:"pointer", display:"flex", alignItems:"center", justifyContent:"center", gap:5, fontWeight:600 }}>
                             {favorites.includes(result.product) ? "❤️ Opgeslagen" : "🤍 Opslaan"}
                           </button>
                         </div>
@@ -2036,7 +2160,7 @@ export default function App() {
                 </div>
                 <div style={{ display:"flex", gap:8, alignItems:"center" }}>
                   <span style={{ fontSize:11, color:"rgba(30,90,30,0.5)" }}>🔥 {rec.cal} kcal</span>
-                  {!isPremium && <button onClick={()=>setShowPaywall(true)} style={{ marginLeft:"auto", fontSize:11, background:"rgba(251,191,36,0.1)", border:"1px solid rgba(251,191,36,0.2)", borderRadius:8, padding:"3px 10px", color:"#fbbf24", cursor:"pointer" }}>🔒 Volledig recept (Pro)</button>}
+                  {!hasStarter && <button onClick={()=>setShowPaywall(true)} style={{ marginLeft:"auto", fontSize:11, background:"rgba(251,191,36,0.1)", border:"1px solid rgba(251,191,36,0.2)", borderRadius:8, padding:"3px 10px", color:"#fbbf24", cursor:"pointer" }}>🔒 Volledig recept (Starter)</button>}
                 </div>
               </div>
             ))}
@@ -2046,11 +2170,11 @@ export default function App() {
         {/* ═══ WEEKMENU TAB ═══ */}
         {tab==="weekmenu" && (
           <div>
-            {!isPremium && <div onClick={()=>setShowPaywall(true)} style={{ background:"linear-gradient(135deg,rgba(251,191,36,0.1),rgba(249,115,22,0.1))", border:"1px solid rgba(251,191,36,0.2)", borderRadius:14, padding:14, marginBottom:14, cursor:"pointer", textAlign:"center" }}>
+            {!hasStarter && <div onClick={()=>setShowPaywall(true)} style={{ background:"linear-gradient(135deg,rgba(251,191,36,0.1),rgba(249,115,22,0.1))", border:"1px solid rgba(251,191,36,0.2)", borderRadius:14, padding:14, marginBottom:14, cursor:"pointer", textAlign:"center" }}>
               <p style={{ margin:"0 0 4px", color:"#fbbf24", fontWeight:600, fontSize:14 }}>🔒 Pro functie</p>
               <p style={{ margin:0, color:"rgba(30,90,30,0.65)", fontSize:12 }}>Ontgrendel weekmenu planner voor €7,99/maand</p>
             </div>}
-            <div style={{ opacity:isPremium?1:0.4, pointerEvents:isPremium?"auto":"none" }}>
+            <div style={{ opacity:hasStarter?1:0.4, pointerEvents:hasStarter?"auto":"none" }}>
               {/* IF Toggle */}
               <div style={{ background:"rgba(34,139,34,0.06)", borderRadius:14, padding:"12px 14px", marginBottom:14, border:"1px solid rgba(255,255,255,0.07)" }}>
                 <div style={{ display:"flex", alignItems:"center", justifyContent:"space-between", marginBottom: ifMode ? 12 : 0 }}>
@@ -2247,7 +2371,7 @@ export default function App() {
                 ) : suppMsgSent ? (
                   <div style={{ textAlign:"center", padding:"20px 0" }}>
                     <div style={{ fontSize:36, marginBottom:8 }}>✅</div>
-                    <p style={{ margin:"0 0 4px", fontWeight:700, fontSize:15, color:"#1a3a1a" }}>Vraag verzonden!</p>
+                    <p style={{ margin:"0 0 4px", fontWeight:700, fontSize:15, color:"#1a3a1a" }}>Vraag verzonden! 🎉</p>
                     <p style={{ margin:"0 0 14px", fontSize:13, color:"rgba(30,90,30,0.55)" }}>Amanda reageert binnen 3 werkdagen met persoonlijk advies.</p>
                     <button onClick={()=>{ setSuppMsgSent(false); setSuppMsgText(""); }} style={{ padding:"9px 20px", borderRadius:10, border:"1px solid rgba(45,158,107,0.25)", background:"transparent", color:"#2d9e6b", fontSize:12, cursor:"pointer" }}>Nieuwe vraag stellen</button>
                   </div>
@@ -2449,7 +2573,7 @@ export default function App() {
               <p style={{ margin:"0 0 4px", fontSize:20 }}>💪</p>
               <h2 style={{ fontFamily:"'Playfair Display',serif", margin:"0 0 4px", fontSize:20, color:"#1a3a1a" }}>Slaap, Stress & Beweging</h2>
               <p style={{ margin:0, fontSize:12, color:"rgba(30,90,30,0.55)" }}>Tips, oefeningen en schema's van Amanda</p>
-              {!isPremium && <button onClick={()=>setShowPaywall(true)} style={{ marginTop:10, padding:"7px 18px", borderRadius:10, border:"none", background:"linear-gradient(135deg,#fbbf24,#f97316)", color:"#1a0a00", fontSize:12, fontWeight:700, cursor:"pointer" }}>🔒 Pro-functie — Upgrade</button>}
+              {!isPremium && <button onClick={()=>setShowPaywall(true)} style={{ marginTop:10, padding:"7px 18px", borderRadius:10, border:"none", background:"linear-gradient(135deg,#ec4899,#f97316)", color:"#fff", fontSize:12, fontWeight:700, cursor:"pointer" }}>🔒 Pro-functie — Upgrade naar Pro</button>}
             </div>
 
             {isPremium ? (
@@ -2600,8 +2724,8 @@ export default function App() {
               </div>
             ) : (
               <div style={{ textAlign:"center", padding:"20px 0" }}>
-                <p style={{ fontSize:13, color:"rgba(30,90,30,0.55)", marginBottom:16 }}>Upgrade naar Pro voor toegang tot alle tips, oefeningen, schema's en de persoonlijke tracker.</p>
-                <button onClick={()=>setShowPaywall(true)} style={{ padding:"12px 28px", borderRadius:14, border:"none", background:"linear-gradient(135deg,#fbbf24,#f97316)", color:"#1a0a00", fontSize:14, fontWeight:700, cursor:"pointer" }}>⭐ Upgrade naar Pro</button>
+                <p style={{ fontSize:13, color:"rgba(30,90,30,0.55)", marginBottom:16 }}>De leefstijl module met slaap, stress en beweging is beschikbaar voor Pro-leden.</p>
+                <button onClick={()=>setShowPaywall(true)} style={{ padding:"12px 28px", borderRadius:14, border:"none", background:"linear-gradient(135deg,#ec4899,#f97316)", color:"#fff", fontSize:14, fontWeight:700, cursor:"pointer" }}>⭐ Upgrade naar Pro — €7,99/mnd</button>
               </div>
             )}
           </div>
@@ -2645,13 +2769,13 @@ export default function App() {
                         <p style={{ margin:"0 0 2px", fontSize:14, fontWeight:700, color:"#1a3a1a" }}>🎯 Mijn doelen</p>
                         <p style={{ margin:0, fontSize:11, color:"rgba(30,90,30,0.5)" }}>Stel doelen en evalueer je voortgang</p>
                       </div>
-                      <button onClick={()=>{ if(!isPremium){setShowPaywall(true);return;} setNewGoal({type:"slaap",label:"",target:"",unit:"uur/nacht",days:14,dieet:"",comment:""}); setShowAddGoal(true); }} style={{ padding:"7px 14px", borderRadius:10, border:"none", background:"linear-gradient(135deg,#2d9e6b,#a8e6cf)", color:"#fff", fontSize:12, fontWeight:700, cursor:"pointer" }}>+ Doel</button>
+                      <button onClick={()=>{ if(!hasStarter){setShowPaywall(true);return;} setNewGoal({type:"slaap",label:"",target:"",unit:"uur/nacht",days:14,dieet:"",comment:""}); setShowAddGoal(true); }} style={{ padding:"7px 14px", borderRadius:10, border:"none", background:"linear-gradient(135deg,#2d9e6b,#a8e6cf)", color:"#fff", fontSize:12, fontWeight:700, cursor:"pointer" }}>+ Doel</button>
                     </div>
 
                     {!isPremium && goals.length===0 && (
                       <div onClick={()=>setShowPaywall(true)} style={{ background:"linear-gradient(135deg,rgba(45,158,107,0.08),rgba(168,230,207,0.06))", border:"1px dashed rgba(45,158,107,0.3)", borderRadius:14, padding:16, textAlign:"center", cursor:"pointer" }}>
-                        <p style={{ margin:"0 0 4px", fontSize:13, fontWeight:700, color:"#2d9e6b" }}>🔒 Doelen stellen is een Pro-functie</p>
-                        <p style={{ margin:0, fontSize:12, color:"rgba(30,90,30,0.5)" }}>Upgrade om doelen te stellen en voortgang te delen met je coach</p>
+                        <p style={{ margin:"0 0 4px", fontSize:13, fontWeight:700, color:"#2d9e6b" }}>🔒 Doelen stellen is een Starter-functie</p>
+                        <p style={{ margin:0, fontSize:12, color:"rgba(30,90,30,0.5)" }}>Upgrade naar Starter om doelen te stellen en voortgang bij te houden</p>
                       </div>
                     )}
 
@@ -2838,10 +2962,10 @@ export default function App() {
             {/* Drie plan knoppen in paywall */}
             <div style={{ display:"flex", flexDirection:"column", gap:8, marginTop:8 }}>
               <button onClick={()=>openWhatsApp("starter")} style={{ width:"100%", padding:13, borderRadius:12, border:"none", background:"linear-gradient(135deg,#f97316,#fbbf24)", color:"#1a0a00", fontSize:14, fontWeight:700, cursor:"pointer", display:"flex", justifyContent:"space-between", alignItems:"center", paddingLeft:18, paddingRight:18 }}>
-                <span>⚡ Starter</span><span>€4,99/mnd →</span>
+                <span>⚡ Starter — recepten & weekmenu & doelen</span><span>€4,99/mnd →</span>
               </button>
               <button onClick={()=>openWhatsApp("pro")} style={{ width:"100%", padding:13, borderRadius:12, border:"none", background:"linear-gradient(135deg,#ec4899,#f97316)", color:"#fff", fontSize:14, fontWeight:700, cursor:"pointer", display:"flex", justifyContent:"space-between", alignItems:"center", paddingLeft:18, paddingRight:18 }}>
-                <span>⭐ Pro</span><span>€7,99/mnd →</span>
+                <span>⭐ Pro — alles inclusief</span><span>€7,99/mnd →</span>
               </button>
               <button onClick={()=>openWhatsApp("prof")} style={{ width:"100%", padding:13, borderRadius:12, border:"none", background:"linear-gradient(135deg,#6366f1,#ec4899)", color:"#fff", fontSize:14, fontWeight:700, cursor:"pointer", display:"flex", justifyContent:"space-between", alignItems:"center", paddingLeft:18, paddingRight:18 }}>
                 <span>🏥 Professional</span><span>€19,99/mnd →</span>
@@ -2850,7 +2974,19 @@ export default function App() {
             <p style={{ margin:"10px 0 0", fontSize:11, color:"rgba(30,90,30,0.45)", textAlign:"center" }}>
               📱 Je wordt doorgestuurd naar WhatsApp om je aanmelding te bevestigen
             </p>
-            <button onClick={()=>setShowPaywall(false)} style={{ width:"100%", marginTop:10, padding:10, background:"transparent", border:"none", color:"rgba(30,90,30,0.5)", fontSize:13, cursor:"pointer" }}>Niet nu</button>
+                     <div style={{ margin:"12px 0 0", background:"rgba(45,158,107,0.08)", borderRadius:12, padding:"12px 14px", border:"1px solid rgba(45,158,107,0.2)" }}>
+              <p style={{ margin:"0 0 8px", fontSize:12, fontWeight:700, color:"#2d9e6b" }}>🎟️ Heb je een toegangscode?</p>
+              <div style={{ display:"flex", gap:8 }}>
+                <input value={accessCodeInput} onChange={e=>{ setAccessCodeInput(e.target.value); setAccessCodeError(""); }}
+                  onKeyDown={e=>e.key==="Enter"&&redeemAccessCode()}
+                  placeholder="Voer code in..."
+                  style={{ flex:1, padding:"9px 12px", borderRadius:10, border:`1px solid ${accessCodeError?"rgba(239,68,68,0.4)":"rgba(45,158,107,0.3)"}`, background:"rgba(255,255,255,0.9)", fontSize:13, outline:"none", color:"#1a3a1a", fontWeight:600 }} />
+                <button onClick={redeemAccessCode} style={{ padding:"9px 14px", borderRadius:10, border:"none", background:"#2d9e6b", color:"#fff", fontSize:13, fontWeight:700, cursor:"pointer" }}>✓</button>
+              </div>
+              {accessCodeError && <p style={{ margin:"4px 0 0", fontSize:11, color:"#ef4444" }}>{accessCodeError}</p>}
+              {accessCodeSuccess && <p style={{ margin:"4px 0 0", fontSize:12, color:"#22c55e", fontWeight:700 }}>✅ Geactiveerd! Sluit dit scherm.</p>}
+            </div>
+     <button onClick={()=>setShowPaywall(false)} style={{ width:"100%", marginTop:8, padding:10, background:"transparent", border:"none", color:"rgba(30,90,30,0.5)", fontSize:13, cursor:"pointer" }}>Niet nu</button>
           </div>
         </div>
       )}
