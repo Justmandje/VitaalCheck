@@ -529,6 +529,228 @@ const DB = {
     ar:{an:"Geen noten",ag:"Bevat gluten",am:"Geen melk",ae:"Geen ei",af:"Geen vis",aso:"Geen soja",asc:"Geen schaaldieren",ase:"Geen sesam"},
     zw:1,zr:"Veilig. Voedzamer dan witbrood.",
     r:{k:"Te veel koolhydraten",v:"Plantaardig",g:"Bevat gluten",l:"Geen lactose",s:"Geen suiker",m:"Met mate aanbevolen",p:"Granen niet paleo",ca:"Meer vezels dan wit",pu:"Matig in punten",fo:"Hoge FODMAP",ai:"Volkoren werkt entstekingsremmend",da:"Aanbevolen volkoren variant"}},
+  "Griekse yoghurt": {k:1,v:0,g:1,l:0,s:0,m:1,p:0,ca:1,pu:1,fo:0,ai:1,da:1,cal:97,info:"Dikke, romige yoghurt met hoog eiwitgehalte.",
+    an:1,ag:1,am:0,ae:1,af:1,aso:1,asc:1,ase:1,vevo:["E","V2"],
+    ar:{an:"Geen noten",ag:"Geen gluten",am:"Bevat melkeiwitten",ae:"Geen ei",af:"Geen vis",aso:"Geen soja",asc:"Geen schaaldieren",ase:"Geen sesam"},
+    pest:{level:"laag",badge:"🟢 Laag",tip:"Zuivelproducten worden niet ingedeeld bij Dirty Dozen."},
+    zw:1,zr:"Uitstekend: rijk aan calcium, eiwit en probiotica. Kies gepasteuriseerde variant.",
+    r:{k:"Laag in koolhydraten, hoog eiwit",v:"Dierlijk product",g:"Geen gluten",l:"Bevat lactose",s:"Bevat melksuiker",m:"Basis van Griekse keuken",p:"Zuivel niet paleo",ca:"Eiwitrijk, matig calorieën",pu:"Matig in punten",fo:"Hoge FODMAP",ai:"Probiotica werken entstekingsremmend",da:"Magere variant aanbevolen"}},
+  "Skyr":           {k:1,v:0,g:1,l:0,s:0,m:0,p:0,ca:1,pu:1,fo:0,ai:1,da:1,cal:63,info:"IJslands zuivelproduct, extreem eiwitrijk en laag in vet.",
+    an:1,ag:1,am:0,ae:1,af:1,aso:1,asc:1,ase:1,vevo:["E","V2"],
+    ar:{an:"Geen noten",ag:"Geen gluten",am:"Bevat melkeiwitten",ae:"Geen ei",af:"Geen vis",aso:"Geen soja",asc:"Geen schaaldieren",ase:"Geen sesam"},
+    pest:{level:"laag",badge:"🟢 Laag",tip:"Zuivelproducten worden niet ingedeeld bij Dirty Dozen."},
+    zw:1,zr:"Veilig. Hoog in calcium en eiwit. Kies gepasteuriseerde variant.",
+    r:{k:"Laag in vet en koolhydraten",v:"Dierlijk product",g:"Geen gluten",l:"Bevat lactose",s:"Bevat melksuiker",m:"Niet traditioneel",p:"Zuivel niet paleo",ca:"Zeer caloriearm en eiwitrijk",pu:"Laag in punten",fo:"Hoge FODMAP",ai:"Probiotica positief",da:"Uitstekend voor DASH"}},
+  "Cottage cheese": {k:1,v:0,g:1,l:0,s:1,m:0,p:0,ca:1,pu:1,fo:0,ai:0,da:1,cal:98,info:"Verse kaassoort, luchtig en eiwitrijk.",
+    an:1,ag:1,am:0,ae:1,af:1,aso:1,asc:1,ase:1,vevo:["E","V2"],
+    ar:{an:"Geen noten",ag:"Geen gluten",am:"Bevat melkeiwitten",ae:"Geen ei",af:"Geen vis",aso:"Geen soja",asc:"Geen schaaldieren",ase:"Geen sesam"},
+    pest:{level:"laag",badge:"🟢 Laag",tip:"Zuivelproducten bevatten doorgaans weinig pesticiden."},
+    zw:1,zr:"Gepasteuriseerde cottage cheese is veilig. Goed voor calcium.",
+    r:{k:"Hoog eiwit, laag koolhydraten",v:"Dierlijk product",g:"Geen gluten",l:"Bevat lactose",s:"Geen suiker",m:"Niet traditioneel",p:"Zuivel niet paleo",ca:"Laag in calorieën",pu:"Laag in punten",fo:"Hoge FODMAP",ai:"Verzadigd vet",da:"Magere variant voor DASH"}},
+  "Crème fraîche":  {k:1,v:0,g:1,l:0,s:1,m:0,p:0,ca:0,pu:0,fo:0,ai:0,da:0,cal:292,info:"Zure room, romig en vetrijk.",
+    an:1,ag:1,am:0,ae:1,af:1,aso:1,asc:1,ase:1,vevo:["O"],
+    ar:{an:"Geen noten",ag:"Geen gluten",am:"Bevat melkeiwitten",ae:"Geen ei",af:"Geen vis",aso:"Geen soja",asc:"Geen schaaldieren",ase:"Geen sesam"},
+    pest:{level:"laag",badge:"🟢 Laag",tip:"Zuivelproducten bevatten doorgaans weinig pesticiden."},
+    zw:1,zr:"Veilig met mate. Hoog in verzadigd vet.",
+    r:{k:"Vet, weinig koolhydraten",v:"Dierlijk product",g:"Geen gluten",l:"Bevat lactose",s:"Geen suiker",m:"Frans ingredient",p:"Zuivel niet paleo",ca:"Zeer calorierijk",pu:"Hoog in punten",fo:"Kleine hoeveelheid lage FODMAP",ai:"Verzadigd vet pro-inflammatoir",da:"Vermijden bij DASH"}},
+  "Kokosmelk":      {k:1,v:1,g:1,l:1,s:1,m:0,p:1,ca:0,pu:0,fo:1,ai:1,da:0,cal:197,info:"Plantaardig melkalternatief van kokosnoot, romig en vetrijk.",
+    an:1,ag:1,am:1,ae:1,af:1,aso:1,asc:1,ase:1,vevo:["O"],
+    ar:{an:"Geen noten",ag:"Geen gluten",am:"Geen melk",ae:"Geen ei",af:"Geen vis",aso:"Geen soja",asc:"Geen schaaldieren",ase:"Geen sesam"},
+    pest:{level:"laag",badge:"🟢 Laag",tip:"Kokosnoten worden ingedeeld bij schone producten."},
+    zw:1,zr:"Veilig met mate. Hoog in verzadigde vetten.",
+    r:{k:"Vetrijk, weinig koolhydraten",v:"Plantaardig",g:"Geen gluten",l:"Geen lactose",s:"Geen suiker",m:"Niet mediterraan",p:"Toegestaan in paleo",ca:"Calorierijk",pu:"Hoog in punten",fo:"Lage FODMAP",ai:"Laurinezuur omstreden",da:"Olijfolie is beter voor DASH"}},
+  "Haverroom":      {k:0,v:1,g:0,l:1,s:0,m:0,p:0,ca:0,pu:0,fo:0,ai:0,da:0,cal:150,info:"Plantaardige roomvervanger op basis van haver.",
+    an:1,ag:0,am:1,ae:1,af:1,aso:1,asc:1,ase:1,vevo:["V"],
+    ar:{an:"Geen noten",ag:"Bevat gluten (haver)",am:"Geen melk",ae:"Geen ei",af:"Geen vis",aso:"Geen soja",asc:"Geen schaaldieren",ase:"Geen sesam"},
+    pest:{level:"middel",badge:"🟡 Middel",tip:"Haver kan pesticiden bevatten door kruisbesmetting."},
+    zw:1,zr:"Veilig. Minder calorieën dan gewone room.",
+    r:{k:"Te veel koolhydraten",v:"Plantaardig",g:"Bevat gluten",l:"Geen lactose",s:"Bevat suikers",m:"Niet traditioneel",p:"Granen niet paleo",ca:"Minder calorieën dan room",pu:"Matig in punten",fo:"Hoge FODMAP",ai:"Neutraal",da:"Beter alternatief dan room"}},
+  "Zoete aardappel":{k:0,v:1,g:1,l:1,s:0,m:1,p:1,ca:1,pu:1,fo:1,ai:1,da:1,cal:86,info:"Oranje knolgewas, rijk aan bètacaroteen en vezels.",
+    an:1,ag:1,am:1,ae:1,af:1,aso:1,asc:1,ase:1,vevo:["V","V2"],
+    ar:{an:"Geen noten",ag:"Geen gluten",am:"Geen melk",ae:"Geen ei",af:"Geen vis",aso:"Geen soja",asc:"Geen schaaldieren",ase:"Geen sesam"},
+    pest:{level:"middel",badge:"🟡 Middel",tip:"Goed wassen en schillen vermindert residuen sterk."},
+    zw:1,zr:"Uitstekend: bètacaroteen, foliumzuur en vezels.",
+    r:{k:"Te veel koolhydraten",v:"Plantaardig",g:"Geen gluten",l:"Geen lactose",s:"Bevat natuurlijke suikers",m:"Met mate",p:"Toegestaan in paleo (knolgewas)",ca:"Matig calorieën, voedzaam",pu:"Matig in punten",fo:"Lage FODMAP",ai:"Bètacaroteen is krachtig antioxidant",da:"Uitstekend voor DASH"}},
+  "Pastinaak":      {k:0,v:1,g:1,l:1,s:0,m:1,p:1,ca:1,pu:1,fo:1,ai:1,da:1,cal:75,info:"Witte wortelgroente met zoete smaak.",
+    an:1,ag:1,am:1,ae:1,af:1,aso:1,asc:1,ase:1,vevo:["V","V2"],
+    ar:{an:"Geen noten",ag:"Geen gluten",am:"Geen melk",ae:"Geen ei",af:"Geen vis",aso:"Geen soja",asc:"Geen schaaldieren",ase:"Geen sesam"},
+    pest:{level:"middel",badge:"🟡 Middel",tip:"Schillen aanbevolen."},
+    zw:1,zr:"Veilig. Rijk aan foliumzuur en vezels.",
+    r:{k:"Te veel koolhydraten",v:"Plantaardig",g:"Geen gluten",l:"Geen lactose",s:"Bevat suikers",m:"Mediterraan ingredient",p:"Wortelgroenten toegestaan in paleo",ca:"Caloriearm",pu:"Laag in punten",fo:"Lage FODMAP",ai:"Antioxidanten en vezels",da:"Goed voor DASH"}},
+  "Knolselderij":   {k:1,v:1,g:1,l:1,s:1,m:1,p:1,ca:1,pu:1,fo:1,ai:1,da:1,cal:42,info:"Knolgewas met nootachtige smaak, veelzijdig te verwerken.",
+    an:1,ag:1,am:1,ae:1,af:1,aso:1,asc:1,ase:1,vevo:["V","V2"],
+    ar:{an:"Geen noten",ag:"Geen gluten",am:"Geen melk",ae:"Geen ei",af:"Geen vis",aso:"Geen soja",asc:"Geen schaaldieren",ase:"Geen sesam"},
+    pest:{level:"middel",badge:"🟡 Middel",tip:"Schillen aanbevolen."},
+    zw:1,zr:"Veilig. Goed voor de nieren en spijsvertering.",
+    r:{k:"Weinig koolhydraten",v:"Plantaardig",g:"Geen gluten",l:"Geen lactose",s:"Geen suiker",m:"Populair in soepen",p:"Knolgewas, toegestaan in paleo",ca:"Caloriearm",pu:"Nul punten",fo:"Lage FODMAP",ai:"Antioxidanten",da:"Goed voor DASH"}},
+  "Bietjes":        {k:0,v:1,g:1,l:1,s:0,m:1,p:1,ca:1,pu:1,fo:0,ai:1,da:1,cal:43,info:"Rode knolgroente, rijk aan nitraten en antioxidanten.",
+    an:1,ag:1,am:1,ae:1,af:1,aso:1,asc:1,ase:1,vevo:["V","V2"],
+    ar:{an:"Geen noten",ag:"Geen gluten",am:"Geen melk",ae:"Geen ei",af:"Geen vis",aso:"Geen soja",asc:"Geen schaaldieren",ase:"Geen sesam"},
+    pest:{level:"laag",badge:"🟢 Clean Fifteen",tip:"Veilig conventioneel. Dikke schil beschermt goed."},
+    zw:1,zr:"Veilig. Nitraten kunnen bloeddruk verlagen.",
+    r:{k:"Te veel koolhydraten",v:"Plantaardig",g:"Geen gluten",l:"Geen lactose",s:"Bevat suikers",m:"Mediterraan ingredient",p:"Wortelgroenten toegestaan in paleo",ca:"Caloriearm maar suikerrijk",pu:"Laag in punten",fo:"Hoge FODMAP",ai:"Betalaïnen zijn krachtige antioxidanten",da:"Uitstekend voor DASH — verlaagt bloeddruk"}},
+  "Pak choi":       {k:1,v:1,g:1,l:1,s:1,m:0,p:1,ca:1,pu:1,fo:1,ai:1,da:1,cal:13,info:"Aziatische bladgroente, rijk aan vitamine C en K.",
+    an:1,ag:1,am:1,ae:1,af:1,aso:1,asc:1,ase:1,vevo:["V","V2"],
+    ar:{an:"Geen noten",ag:"Geen gluten",am:"Geen melk",ae:"Geen ei",af:"Geen vis",aso:"Geen soja",asc:"Geen schaaldieren",ase:"Geen sesam"},
+    pest:{level:"middel",badge:"🟡 Middel",tip:"Goed wassen aanbevolen."},
+    zw:1,zr:"Uitstekend: foliumzuur, calcium en vitamine K.",
+    r:{k:"Bijna geen koolhydraten",v:"Plantaardig",g:"Geen gluten",l:"Geen lactose",s:"Geen suiker",m:"Niet mediterraan",p:"Groenten zijn paleo",ca:"Bijna calorievrij",pu:"Nul punten",fo:"Lage FODMAP",ai:"Glucosinolaten zijn antioxidatief",da:"Uitstekend voor DASH"}},
+  "Vijgen":         {k:0,v:1,g:1,l:1,s:0,m:1,p:1,ca:0,pu:0,fo:0,ai:1,da:1,cal:74,info:"Zoet mediterraan fruit, vers of gedroogd.",
+    an:1,ag:1,am:1,ae:1,af:1,aso:1,asc:1,ase:1,vevo:["V","V2"],
+    ar:{an:"Geen noten",ag:"Geen gluten",am:"Geen melk",ae:"Geen ei",af:"Geen vis",aso:"Geen soja",asc:"Geen schaaldieren",ase:"Geen sesam"},
+    pest:{level:"middel",badge:"🟡 Middel",tip:"Goed wassen aanbevolen bij verse vijgen."},
+    zw:1,zr:"Veilig. Rijk aan vezels en kalium.",
+    r:{k:"Te veel suiker",v:"Plantaardig",g:"Geen gluten",l:"Geen lactose",s:"Hoog in fruitsuiker",m:"Typisch mediterraan",p:"Fruit is paleo",ca:"Calorierijk voor fruit",pu:"Hoog in punten",fo:"Hoge FODMAP",ai:"Polyfenolen zijn antioxidatief",da:"Met mate voor DASH"}},
+  "Dadels":         {k:0,v:1,g:1,l:1,s:0,m:1,p:1,ca:0,pu:0,fo:0,ai:0,da:0,cal:277,info:"Zoete vruchten, zeer suikerrijk en energiedicht.",
+    an:1,ag:1,am:1,ae:1,af:1,aso:1,asc:1,ase:1,vevo:["V","V2"],
+    ar:{an:"Geen noten",ag:"Geen gluten",am:"Geen melk",ae:"Geen ei",af:"Geen vis",aso:"Geen soja",asc:"Geen schaaldieren",ase:"Geen sesam"},
+    pest:{level:"laag",badge:"🟢 Laag",tip:"Veilig conventioneel. Dikke schil beschermt goed."},
+    zw:1,zr:"Veilig met mate. Kan bevalling stimuleren bij grote hoeveelheden.",
+    r:{k:"Extreem veel suiker",v:"Plantaardig",g:"Geen gluten",l:"Geen lactose",s:"Zeer hoog in suiker",m:"Traditioneel mediterraan/Midden-Oosten",p:"Fruit is paleo maar suikerrijk",ca:"Zeer calorierijk",pu:"Hoog in punten",fo:"Hoge FODMAP",ai:"Suiker bevordert ontsteking",da:"Vermijden bij DASH"}},
+  "Kokos":          {k:1,v:1,g:1,l:1,s:1,m:0,p:1,ca:0,pu:0,fo:1,ai:0,da:0,cal:354,info:"Tropische noot, rijk aan verzadigde vetten.",
+    an:1,ag:1,am:1,ae:1,af:1,aso:1,asc:1,ase:1,vevo:["O"],
+    ar:{an:"Geen noten (botanisch gezien geen noot)",ag:"Geen gluten",am:"Geen melk",ae:"Geen ei",af:"Geen vis",aso:"Geen soja",asc:"Geen schaaldieren",ase:"Geen sesam"},
+    pest:{level:"laag",badge:"🟢 Laag",tip:"Veilig conventioneel. Harde schil beschermt goed."},
+    zw:1,zr:"Veilig met mate.",
+    r:{k:"Vetrijk, weinig koolhydraten",v:"Plantaardig",g:"Geen gluten",l:"Geen lactose",s:"Geen suiker",m:"Niet mediterraan",p:"Toegestaan in paleo",ca:"Zeer calorierijk",pu:"Hoog in punten",fo:"Lage FODMAP",ai:"Laurinezuur omstreden",da:"Olijfolie is beter voor DASH"}},
+  "Kip dij":        {k:1,v:0,g:1,l:1,s:1,m:1,p:1,ca:1,pu:1,fo:1,ai:1,da:1,cal:209,info:"Donker kippenvlees, smaakvoller en vetter dan filet.",
+    an:1,ag:1,am:1,ae:1,af:1,aso:1,asc:1,ase:1,vevo:["E"],
+    ar:{an:"Geen noten",ag:"Geen gluten",am:"Geen melk",ae:"Geen ei",af:"Geen vis",aso:"Geen soja",asc:"Geen schaaldieren",ase:"Geen sesam"},
+    pest:{level:"laag",badge:"🟢 Laag",tip:"Vlees wordt niet ingedeeld bij Dirty Dozen."},
+    zw:1,zr:"Goed doorgekookt is veilig. Goed voor eiwit en ijzer.",
+    r:{k:"Eiwitrijk, iets meer vet dan filet",v:"Dierlijk product",g:"Geen gluten",l:"Geen lactose",s:"Geen suiker",m:"Veelgebruikt",p:"Vlees is paleo",ca:"Meer calorieën dan filet",pu:"Matig in punten",fo:"Geen FODMAP",ai:"Mager vlees, neutraal",da:"Met mate aanbevolen"}},
+  "Scampi":         {k:1,v:0,g:1,l:1,s:1,m:1,p:1,ca:1,pu:1,fo:1,ai:1,da:1,cal:85,info:"Grote garnalen, populair in mediterrane keuken.",
+    an:1,ag:1,am:1,ae:1,af:1,aso:1,asc:0,ase:1,vevo:["E"],
+    ar:{an:"Geen noten",ag:"Geen gluten",am:"Geen melk",ae:"Geen ei",af:"Geen vis (schaaldier)",aso:"Geen soja",asc:"Bevat schaaldieren",ase:"Geen sesam"},
+    pest:{level:"laag",badge:"🟢 Laag",tip:"Zeevruchten bevatten doorgaans weinig pesticiden."},
+    zw:2,zr:"Alleen goed doorbakken veilig. Rauw vermijden tijdens zwangerschap.",
+    r:{k:"Eiwitrijk, geen koolhydraten",v:"Dierlijk product",g:"Geen gluten",l:"Geen lactose",s:"Geen suiker",m:"Klassiek mediterraan",p:"Schaaldieren zijn paleo",ca:"Zeer caloriearm",pu:"Laag in punten",fo:"Geen FODMAP",ai:"Mager eiwit",da:"Uitstekend voor DASH"}},
+  "Forel":          {k:1,v:0,g:1,l:1,s:1,m:1,p:1,ca:1,pu:1,fo:1,ai:1,da:1,cal:148,info:"Zoetwatervis, mild van smaak en rijk aan omega-3.",
+    an:1,ag:1,am:1,ae:1,af:0,aso:1,asc:1,ase:1,vevo:["E","O"],
+    ar:{an:"Geen noten",ag:"Geen gluten",am:"Geen melk",ae:"Geen ei",af:"Bevat vis",aso:"Geen soja",asc:"Geen schaaldieren",ase:"Geen sesam"},
+    pest:{level:"laag",badge:"🟢 Laag",tip:"Vis bevat doorgaans geen pesticidenresten."},
+    zw:1,zr:"Veilig mits goed doorbakken. Laag in kwik.",
+    r:{k:"Vette vis, uitstekend",v:"Dierlijk product",g:"Geen gluten",l:"Geen lactose",s:"Geen suiker",m:"Aanbevolen vis",p:"Vis is paleo",ca:"Matig calorieën",pu:"Matig in punten",fo:"Geen FODMAP",ai:"Omega-3 en vitamine D",da:"Uitstekend voor DASH"}},
+  "Ansjovis":       {k:1,v:0,g:1,l:1,s:1,m:1,p:1,ca:1,pu:1,fo:1,ai:1,da:0,cal:131,info:"Kleine gezouten vis, intense umami smaak.",
+    an:1,ag:1,am:1,ae:1,af:0,aso:1,asc:1,ase:1,vevo:["E","O"],
+    ar:{an:"Geen noten",ag:"Geen gluten",am:"Geen melk",ae:"Geen ei",af:"Bevat vis",aso:"Geen soja",asc:"Geen schaaldieren",ase:"Geen sesam"},
+    pest:{level:"laag",badge:"🟢 Laag",tip:"Vis bevat doorgaans geen pesticidenresten."},
+    zw:2,zr:"Hoog zoutgehalte. Met mate veilig tijdens zwangerschap.",
+    r:{k:"Eiwitrijk, geen koolhydraten",v:"Dierlijk product",g:"Geen gluten",l:"Geen lactose",s:"Geen suiker",m:"Typisch mediterraan",p:"Vis is paleo",ca:"Matig calorieën",pu:"Laag in punten",fo:"Geen FODMAP",ai:"Omega-3 vetzuren",da:"Hoog zout — met mate"}},
+  "Tofu":           {k:1,v:1,g:1,l:1,s:0,m:0,p:0,ca:1,pu:1,fo:1,ai:1,da:1,cal:76,info:"Gestold sojamelk, plantaardige eiwitbron.",
+    an:1,ag:1,am:1,ae:1,af:1,aso:0,asc:1,ase:1,vevo:["E"],
+    ar:{an:"Geen noten",ag:"Geen gluten",am:"Geen melk",ae:"Geen ei",af:"Geen vis",aso:"Bevat soja",asc:"Geen schaaldieren",ase:"Geen sesam"},
+    pest:{level:"middel",badge:"🟡 Middel",tip:"Kies biologische soja waar mogelijk."},
+    zw:1,zr:"Veilig met mate. Isoflavonen in normaal gebruik geen probleem.",
+    r:{k:"Laag in koolhydraten",v:"100% plantaardig",g:"Geen gluten",l:"Geen lactose",s:"Geen suiker",m:"Niet mediterraan",p:"Peulvrucht, niet paleo",ca:"Caloriearm en eiwitrijk",pu:"Laag in punten",fo:"Lage FODMAP (stevige tofu)",ai:"Isoflavonen zijn antioxidatief",da:"Uitstekend voor DASH"}},
+  "Tempeh":         {k:1,v:1,g:1,l:1,s:0,m:0,p:0,ca:1,pu:1,fo:1,ai:1,da:1,cal:193,info:"Gefermenteerde sojabonen, probiotisch en eiwitrijk.",
+    an:1,ag:1,am:1,ae:1,af:1,aso:0,asc:1,ase:1,vevo:["E","V2"],
+    ar:{an:"Geen noten",ag:"Geen gluten",am:"Geen melk",ae:"Geen ei",af:"Geen vis",aso:"Bevat soja",asc:"Geen schaaldieren",ase:"Geen sesam"},
+    pest:{level:"middel",badge:"🟡 Middel",tip:"Kies biologische soja waar mogelijk."},
+    zw:1,zr:"Veilig. Fermentatie maakt soja beter verteerbaar.",
+    r:{k:"Weinig koolhydraten, hoog eiwit",v:"Plantaardig",g:"Geen gluten",l:"Geen lactose",s:"Geen suiker",m:"Niet mediterraan",p:"Peulvrucht, niet paleo",ca:"Calorierijker dan tofu",pu:"Matig in punten",fo:"Lage FODMAP",ai:"Probiotica en antioxidanten",da:"Goed voor DASH"}},
+  "Edamame":        {k:0,v:1,g:1,l:1,s:1,m:0,p:0,ca:1,pu:1,fo:1,ai:1,da:1,cal:121,info:"Jonge sojabonen, eiwitrijk en vezelrijk.",
+    an:1,ag:1,am:1,ae:1,af:1,aso:0,asc:1,ase:1,vevo:["E","V2","V"],
+    ar:{an:"Geen noten",ag:"Geen gluten",am:"Geen melk",ae:"Geen ei",af:"Geen vis",aso:"Bevat soja",asc:"Geen schaaldieren",ase:"Geen sesam"},
+    pest:{level:"middel",badge:"🟡 Middel",tip:"Kies biologische soja waar mogelijk."},
+    zw:1,zr:"Veilig. Rijk aan foliumzuur en eiwit.",
+    r:{k:"Te veel koolhydraten",v:"Plantaardig",g:"Geen gluten",l:"Geen lactose",s:"Geen suiker",m:"Niet mediterraan",p:"Peulvrucht, niet paleo",ca:"Caloriearm en voedzaam",pu:"Laag in punten",fo:"Lage FODMAP",ai:"Isoflavonen en antioxidanten",da:"Uitstekend voor DASH"}},
+  "Boekweit":       {k:0,v:1,g:1,l:1,s:1,m:1,p:0,ca:1,pu:1,fo:1,ai:1,da:1,cal:343,info:"Pseudograan, van nature glutenvrij en voedzaam.",
+    an:1,ag:1,am:1,ae:1,af:1,aso:1,asc:1,ase:1,vevo:["V","E","V2"],
+    ar:{an:"Geen noten",ag:"Geen gluten (pseudograan)",am:"Geen melk",ae:"Geen ei",af:"Geen vis",aso:"Geen soja",asc:"Geen schaaldieren",ase:"Geen sesam"},
+    pest:{level:"laag",badge:"🟢 Laag",tip:"Boekweit heeft weinig pesticiden nodig in de teelt."},
+    zw:1,zr:"Veilig. Rijk aan ijzer, magnesium en foliumzuur.",
+    r:{k:"Te veel koolhydraten",v:"Plantaardig",g:"Van nature glutenvrij",l:"Geen lactose",s:"Geen suiker",m:"Niet mediterraan",p:"Pseudograan, discutabel in paleo",ca:"Voedzaam en verzadigend",pu:"Matig in punten",fo:"Lage FODMAP",ai:"Rutine is antioxidant",da:"Goed voor DASH"}},
+  "Amarant":        {k:0,v:1,g:1,l:1,s:1,m:0,p:0,ca:1,pu:1,fo:1,ai:1,da:1,cal:371,info:"Oergraan uit Zuid-Amerika, volledig eiwit en glutenvrij.",
+    an:1,ag:1,am:1,ae:1,af:1,aso:1,asc:1,ase:1,vevo:["V","E","V2"],
+    ar:{an:"Geen noten",ag:"Geen gluten",am:"Geen melk",ae:"Geen ei",af:"Geen vis",aso:"Geen soja",asc:"Geen schaaldieren",ase:"Geen sesam"},
+    pest:{level:"laag",badge:"🟢 Laag",tip:"Amarant heeft weinig pesticiden nodig."},
+    zw:1,zr:"Veilig. Rijk aan ijzer en calcium.",
+    r:{k:"Te veel koolhydraten",v:"Plantaardig",g:"Van nature glutenvrij",l:"Geen lactose",s:"Geen suiker",m:"Niet mediterraan",p:"Pseudograan, niet paleo",ca:"Voedzaam",pu:"Matig in punten",fo:"Lage FODMAP",ai:"Tocotrienolen zijn antioxidatief",da:"Goed voor DASH"}},
+  "Macadamia":      {k:1,v:1,g:1,l:1,s:1,m:0,p:1,ca:0,pu:0,fo:1,ai:1,da:0,cal:718,info:"Romige Australische noot, rijkst aan gezonde vetten.",
+    an:0,ag:1,am:1,ae:1,af:1,aso:1,asc:1,ase:1,vevo:["O","E"],
+    ar:{an:"Bevat noten",ag:"Geen gluten",am:"Geen melk",ae:"Geen ei",af:"Geen vis",aso:"Geen soja",asc:"Geen schaaldieren",ase:"Geen sesam"},
+    pest:{level:"laag",badge:"🟢 Laag",tip:"Noten bevatten doorgaans weinig pesticiden."},
+    zw:1,zr:"Veilig. Rijkste bron van enkelvoudig onverzadigde vetten.",
+    r:{k:"Uitstekend — puur vet",v:"Plantaardig",g:"Geen gluten",l:"Geen lactose",s:"Geen suiker",m:"Niet mediterraan",p:"Noten zijn paleo",ca:"Zeer calorierijk",pu:"Hoog in punten",fo:"Lage FODMAP",ai:"Omega-7 vetzuren zijn ontstekingsremmend",da:"Met mate voor DASH"}},
+  "Paranoten":      {k:1,v:1,g:1,l:1,s:1,m:0,p:1,ca:0,pu:0,fo:1,ai:1,da:1,cal:656,info:"Seleniumrijkste voedingsbron ter wereld.",
+    an:0,ag:1,am:1,ae:1,af:1,aso:1,asc:1,ase:1,vevo:["O","E","V2"],
+    ar:{an:"Bevat noten",ag:"Geen gluten",am:"Geen melk",ae:"Geen ei",af:"Geen vis",aso:"Geen soja",asc:"Geen schaaldieren",ase:"Geen sesam"},
+    pest:{level:"laag",badge:"🟢 Laag",tip:"Noten bevatten doorgaans weinig pesticiden."},
+    zw:2,zr:"Max 1-2 per dag vanwege hoog seleniumgehalte. Te veel selenium is schadelijk.",
+    r:{k:"Vet en eiwit",v:"Plantaardig",g:"Geen gluten",l:"Geen lactose",s:"Geen suiker",m:"Niet mediterraan",p:"Noten zijn paleo",ca:"Calorierijk",pu:"Hoog in punten",fo:"Lage FODMAP",ai:"Selenium is krachtig antioxidant",da:"Met mate voor DASH"}},
+  "Hennepzaad":     {k:1,v:1,g:1,l:1,s:1,m:0,p:1,ca:1,pu:1,fo:1,ai:1,da:1,cal:553,info:"Superfood zaad met ideale omega-3:omega-6 verhouding.",
+    an:1,ag:1,am:1,ae:1,af:1,aso:1,asc:1,ase:1,vevo:["E","O","V2"],
+    ar:{an:"Geen noten",ag:"Geen gluten",am:"Geen melk",ae:"Geen ei",af:"Geen vis",aso:"Geen soja",asc:"Geen schaaldieren",ase:"Geen sesam"},
+    pest:{level:"laag",badge:"🟢 Laag",tip:"Hennep heeft van nature weinig pesticiden nodig."},
+    zw:1,zr:"Veilig. Uitstekende bron van omega-3 en compleet eiwit.",
+    r:{k:"Vet en eiwit, weinig koolhydraten",v:"Plantaardig",g:"Geen gluten",l:"Geen lactose",s:"Geen suiker",m:"Niet traditioneel",p:"Zaden zijn paleo",ca:"Calorierijk maar voedzaam",pu:"Hoog in punten",fo:"Lage FODMAP",ai:"Ideale omega ratio is entstekingsremmend",da:"Goed voor DASH"}},
+  "Maanzaad":       {k:1,v:1,g:1,l:1,s:1,m:1,p:1,ca:0,pu:0,fo:1,ai:1,da:1,cal:525,info:"Klein blauw zaad, rijk aan calcium en gezonde vetten.",
+    an:1,ag:1,am:1,ae:1,af:1,aso:1,asc:1,ase:1,vevo:["O","V2"],
+    ar:{an:"Geen noten",ag:"Geen gluten",am:"Geen melk",ae:"Geen ei",af:"Geen vis",aso:"Geen soja",asc:"Geen schaaldieren",ase:"Geen sesam"},
+    pest:{level:"laag",badge:"🟢 Laag",tip:"Zaden bevatten doorgaans weinig pesticiden."},
+    zw:2,zr:"Kleine hoeveelheden veilig. Grote hoeveelheden bevatten opiaten — vermijden.",
+    r:{k:"Vet en eiwit",v:"Plantaardig",g:"Geen gluten",l:"Geen lactose",s:"Geen suiker",m:"Mediterraan bakgoed",p:"Zaden zijn paleo",ca:"Calorierijk",pu:"Hoog in punten",fo:"Lage FODMAP",ai:"Calcium en omega-6",da:"Met mate voor DASH"}},
+  "Tomatenpuree":   {k:1,v:1,g:1,l:1,s:1,m:1,p:1,ca:1,pu:1,fo:1,ai:1,da:1,cal:82,info:"Geconcentreerde tomatenpasta, basis van sauzen.",
+    an:1,ag:1,am:1,ae:1,af:1,aso:1,asc:1,ase:1,vevo:["V2"],
+    ar:{an:"Geen noten",ag:"Geen gluten",am:"Geen melk",ae:"Geen ei",af:"Geen vis",aso:"Geen soja",asc:"Geen schaaldieren",ase:"Geen sesam"},
+    pest:{level:"middel",badge:"🟡 Middel",tip:"Tomaten bevatten matig pesticiden."},
+    zw:1,zr:"Veilig. Hoog lycopeengehalte door concentratie.",
+    r:{k:"Weinig koolhydraten",v:"Plantaardig",g:"Geen gluten",l:"Geen lactose",s:"Geen suiker",m:"Basis van mediterrane sauzen",p:"Groenten zijn paleo",ca:"Weinig calorieën",pu:"Nul punten",fo:"Lage FODMAP",ai:"Lycopeen is krachtig antioxidant",da:"Uitstekend voor DASH"}},
+  "Balsamico":      {k:0,v:1,g:1,l:1,s:0,m:1,p:1,ca:1,pu:1,fo:1,ai:0,da:0,cal:88,info:"Italiaanse azijn van ingekookte druivenmost.",
+    an:1,ag:1,am:1,ae:1,af:1,aso:1,asc:1,ase:1,vevo:[],
+    ar:{an:"Geen noten",ag:"Geen gluten",am:"Geen melk",ae:"Geen ei",af:"Geen vis",aso:"Geen soja",asc:"Geen schaaldieren",ase:"Geen sesam"},
+    pest:{level:"laag",badge:"🟢 Laag",tip:"Azijn bevatten doorgaans geen pesticidenresten."},
+    zw:1,zr:"Veilig in kleine hoeveelheden als smaakmaker.",
+    r:{k:"Kleine hoeveelheid bevat suiker",v:"Plantaardig",g:"Geen gluten",l:"Geen lactose",s:"Bevat suiker",m:"Typisch Italiaans",p:"Als smaakmaker toegestaan",ca:"Kleine hoeveelheid",pu:"Klein beetje punten",fo:"Lage FODMAP",ai:"Bevat suiker",da:"Hoog in suiker — met mate"}},
+  "Appelazijn":     {k:1,v:1,g:1,l:1,s:1,m:1,p:1,ca:1,pu:1,fo:1,ai:1,da:1,cal:22,info:"Gefermenteerde appelazijn, ondersteunt spijsvertering.",
+    an:1,ag:1,am:1,ae:1,af:1,aso:1,asc:1,ase:1,vevo:[],
+    ar:{an:"Geen noten",ag:"Geen gluten",am:"Geen melk",ae:"Geen ei",af:"Geen vis",aso:"Geen soja",asc:"Geen schaaldieren",ase:"Geen sesam"},
+    pest:{level:"laag",badge:"🟢 Laag",tip:"Azijn bevatten doorgaans geen pesticidenresten."},
+    zw:1,zr:"Veilig als smaakmaker in kleine hoeveelheden.",
+    r:{k:"Bijna geen calorieën",v:"Plantaardig",g:"Geen gluten",l:"Geen lactose",s:"Geen suiker",m:"Smaakmaker",p:"Toegestaan als smaakmaker",ca:"Bijna calorievrij",pu:"Nul punten",fo:"Lage FODMAP",ai:"Azijnzuur kan entstekingsremmend werken",da:"Uitstekend voor DASH"}},
+  "Miso":           {k:1,v:1,g:0,l:1,s:1,m:0,p:0,ca:1,pu:1,fo:1,ai:1,da:0,cal:199,info:"Gefermenteerde sojapasta uit Japan, rijk aan umami en probiotica.",
+    an:1,ag:0,am:1,ae:1,af:1,aso:0,asc:1,ase:1,vevo:["E","V2"],
+    ar:{an:"Geen noten",ag:"Kan gluten bevatten (gerst/tarwe miso)",am:"Geen melk",ae:"Geen ei",af:"Geen vis",aso:"Bevat soja",asc:"Geen schaaldieren",ase:"Geen sesam"},
+    pest:{level:"laag",badge:"🟢 Laag",tip:"Gefermenteerde producten bevatten doorgaans geen pesticidenresten."},
+    zw:1,zr:"Veilig met mate. Hoog natriumgehalte — beperk inname.",
+    r:{k:"Weinig koolhydraten",v:"Plantaardig",g:"Kan gluten bevatten",l:"Geen lactose",s:"Geen suiker",m:"Niet mediterraan",p:"Soja is peulvrucht, niet paleo",ca:"Weinig calorieën als smaakmaker",pu:"Laag in punten",fo:"Lage FODMAP",ai:"Probiotica zijn entstekingsremmend",da:"Hoog natrium — beperkt gebruiken"}},
+  "Vissaus":        {k:1,v:0,g:1,l:1,s:0,m:0,p:0,ca:1,pu:1,fo:1,ai:0,da:0,cal:35,info:"Gefermenteerde vissaus uit Zuidoost-Azië, intense smaak.",
+    an:1,ag:1,am:1,ae:1,af:0,aso:1,asc:1,ase:1,vevo:[],
+    ar:{an:"Geen noten",ag:"Geen gluten",am:"Geen melk",ae:"Geen ei",af:"Bevat vis",aso:"Geen soja",asc:"Geen schaaldieren",ase:"Geen sesam"},
+    pest:{level:"laag",badge:"🟢 Laag",tip:"Gefermenteerde producten bevatten doorgaans geen pesticidenresten."},
+    zw:2,zr:"Veilig als smaakmaker. Hoog natriumgehalte — beperkt gebruiken.",
+    r:{k:"Bijna geen calorieën",v:"Bevat vis",g:"Geen gluten",l:"Geen lactose",s:"Bevat suiker",m:"Niet mediterraan",p:"Niet traditioneel paleo",ca:"Weinig calorieën",pu:"Laag in punten",fo:"Lage FODMAP",ai:"Hoog natrium is pro-inflammatoir",da:"Vermijden door zoutgehalte"}},
+  "Kokosaminos":    {k:1,v:1,g:1,l:1,s:0,m:0,p:1,ca:1,pu:1,fo:1,ai:1,da:0,cal:26,info:"Glutenvrij, sojavrij alternatief voor sojasaus.",
+    an:1,ag:1,am:1,ae:1,af:1,aso:1,asc:1,ase:1,vevo:[],
+    ar:{an:"Geen noten",ag:"Geen gluten",am:"Geen melk",ae:"Geen ei",af:"Geen vis",aso:"Geen soja",asc:"Geen schaaldieren",ase:"Geen sesam"},
+    pest:{level:"laag",badge:"🟢 Laag",tip:"Kokosnoot bevat doorgaans weinig pesticiden."},
+    zw:1,zr:"Veilig. Lager in natrium dan sojasaus.",
+    r:{k:"Bijna geen koolhydraten",v:"Plantaardig",g:"Geen gluten",l:"Geen lactose",s:"Licht zoet",m:"Niet mediterraan",p:"Toegestaan in paleo",ca:"Bijna calorievrij",pu:"Nul punten",fo:"Lage FODMAP",ai:"Lager natrium dan sojasaus",da:"Beter alternatief dan sojasaus"}},
+  "Passievrucht":   {k:0,v:1,g:1,l:1,s:0,m:0,p:1,ca:1,pu:1,fo:1,ai:1,da:1,cal:97,info:"Tropisch fruit met intense smaak, rijk aan vezels.",
+    an:1,ag:1,am:1,ae:1,af:1,aso:1,asc:1,ase:1,vevo:["V","V2"],
+    ar:{an:"Geen noten",ag:"Geen gluten",am:"Geen melk",ae:"Geen ei",af:"Geen vis",aso:"Geen soja",asc:"Geen schaaldieren",ase:"Geen sesam"},
+    pest:{level:"laag",badge:"🟢 Laag",tip:"Dikke schil beschermt goed."},
+    zw:1,zr:"Veilig. Rijk aan vitamine C en vezels.",
+    r:{k:"Te veel koolhydraten",v:"Plantaardig",g:"Geen gluten",l:"Geen lactose",s:"Hoog in fruitsuiker",m:"Niet mediterraan",p:"Fruit is paleo",ca:"Matig calorieën",pu:"Matig in punten",fo:"Lage FODMAP",ai:"Antioxidanten en vezels",da:"Goed voor DASH"}},
+  "Lamskotelet":    {k:1,v:0,g:1,l:1,s:1,m:1,p:1,ca:0,pu:0,fo:1,ai:0,da:0,cal:294,info:"Mals lamsvlees, traditioneel in mediterrane keuken.",
+    an:1,ag:1,am:1,ae:1,af:1,aso:1,asc:1,ase:1,vevo:["E","O"],
+    ar:{an:"Geen noten",ag:"Geen gluten",am:"Geen melk",ae:"Geen ei",af:"Geen vis",aso:"Geen soja",asc:"Geen schaaldieren",ase:"Geen sesam"},
+    pest:{level:"laag",badge:"🟢 Laag",tip:"Vlees wordt niet ingedeeld bij Dirty Dozen."},
+    zw:1,zr:"Goed doorgekookt is veilig. Goed voor eiwit en ijzer.",
+    r:{k:"Eiwitrijk, weinig koolhydraten",v:"Dierlijk product",g:"Geen gluten",l:"Geen lactose",s:"Geen suiker",m:"Klassiek mediterraan",p:"Vlees is paleo",ca:"Calorierijk",pu:"Hoog in punten",fo:"Geen FODMAP",ai:"Verzadigd vet — met mate",da:"Rood vlees beperken bij DASH"}},
+  "Gerookte kipfilet":{k:1,v:0,g:1,l:1,s:1,m:1,p:0,ca:1,pu:1,fo:1,ai:0,da:1,cal:112,info:"Kant-en-klare gerookte kipfilet, handig als eiwitbron.",
+    an:1,ag:1,am:1,ae:1,af:1,aso:1,asc:1,ase:1,vevo:["E"],
+    ar:{an:"Geen noten",ag:"Geen gluten",am:"Geen melk",ae:"Geen ei",af:"Geen vis",aso:"Geen soja",asc:"Geen schaaldieren",ase:"Geen sesam"},
+    pest:{level:"laag",badge:"🟢 Laag",tip:"Vlees wordt niet ingedeeld bij Dirty Dozen."},
+    zw:2,zr:"Bewerkt vlees — met mate. Hoog zoutgehalte, kies zo onbewerkt mogelijk.",
+    r:{k:"Eiwitrijk, geen koolhydraten",v:"Dierlijk product",g:"Geen gluten",l:"Geen lactose",s:"Geen suiker",m:"Handige eiwitbron",p:"Bewerkt, niet paleo",ca:"Laag in calorieën",pu:"Laag in punten",fo:"Geen FODMAP",ai:"Bewerkt vlees pro-inflammatoir",da:"Hoog natrium — met mate"}},
+  "Jonge kaas":     {k:1,v:0,g:1,l:0,s:1,m:1,p:0,ca:0,pu:0,fo:0,ai:0,da:1,cal:356,info:"Milde Nederlandse kaas, populair op brood.",
+    an:1,ag:1,am:0,ae:1,af:1,aso:1,asc:1,ase:1,vevo:["E","O","V2"],
+    ar:{an:"Geen noten",ag:"Geen gluten",am:"Bevat melkeiwitten en lactose",ae:"Geen ei",af:"Geen vis",aso:"Geen soja",asc:"Geen schaaldieren",ase:"Geen sesam"},
+    pest:{level:"laag",badge:"🟢 Laag",tip:"Zuivelproducten bevatten doorgaans weinig pesticiden."},
+    zw:1,zr:"Gepasteuriseerde jonge kaas is veilig. Goed voor calcium.",
+    r:{k:"Laag in koolhydraten, hoog vet",v:"Dierlijk product",g:"Geen gluten",l:"Bevat lactose",s:"Geen suiker",m:"Niet traditioneel mediterraan",p:"Zuivel niet paleo",ca:"Calorierijk",pu:"Hoog in punten",fo:"Hoge FODMAP",ai:"Verzadigd vet",da:"Magere variant met mate"}},
   "Aardappel":    {k:0,v:1,g:1,l:1,s:1,m:1,p:0,ca:1,pu:1,fo:1,ai:1,da:1,vevo:["V", "V2"],pest:{level:"hoog",badge:"🔴 Dirty Dozen",tip:"Koop biologisch of schil goed. Staat onderaan Dirty Dozen maar bevat systemische pesticiden."},cal:77,info:"Knolgewas, zetmeelrijk.",
     an:1,ag:1,am:1,ae:1,af:1,aso:1,asc:1,ase:1,
     ar:{an:"Geen noten",ag:"Geen gluten",am:"Geen melk",ae:"Geen ei",af:"Geen vis",aso:"Geen soja",asc:"Geen schaaldieren",ase:"Geen sesam"},
@@ -538,13 +760,13 @@ const DB = {
 
 const CATEGORIES = {
   "🥩 Vlees & Vis":    ["Kipfilet","Zalm","Tonijn","Garnalen","Ei","Lever"],
-  "🥦 Groenten":       ["Broccoli","Spinazie","Tomaat","Komkommer","Paprika","Champignons","Courgette","Aubergine","Knoflook","Ui","Rode kool","Witte kool","Spruiten","Prei","Bleekselderij","Venkel","Pompoen","Radijs","Witlof","Rucola","Mais"],
-  "🍎 Fruit":          ["Appel","Banaan","Aardbei","Blauwe bessen","Citroen","Mango","Ananas","Watermeloen","Granaatappel","Pruim","Nectarine"],
-  "🧀 Zuivel":         ["Melk","Kaas","Yoghurt","Boter","Feta","Amandelmelk","Sojamelk","Kwark","Ricotta"],
-  "🌾 Granen & Brood": ["Witbrood","Volkoren brood","Pasta","Rijst","Quinoa","Havermout","Zilvervliesrijst","Speltbrood"],
-  "🥜 Noten & Zaden":  ["Amandelen","Walnoten","Pindakaas","Tahini","Pijnboompitten","Sesamzaad","Pompoenpitten"],
-  "🫘 Peulvruchten":   ["Linzen","Kikkererwten","Hummus"],
-  "🛢️ Overig":         ["Olijfolie","Ketchup","Avocado","Koffie","Groene thee","Wijn","Bier","Water","Chips","Chocolade","Aardappel","Sojasaus","Kokosolie"],
+  "🥦 Groenten":       ["Broccoli","Spinazie","Tomaat","Komkommer","Paprika","Champignons","Courgette","Aubergine","Knoflook","Ui","Rode kool","Witte kool","Spruiten","Prei","Bleekselderij","Venkel","Pompoen","Radijs","Witlof","Rucola","Mais","Zoete aardappel","Pastinaak","Knolselderij","Bietjes","Pak choi"],
+  "🍎 Fruit":          ["Appel","Banaan","Aardbei","Blauwe bessen","Citroen","Mango","Ananas","Watermeloen","Granaatappel","Pruim","Nectarine","Vijgen","Dadels","Passievrucht","Kokos"],
+  "🧀 Zuivel":         ["Melk","Kaas","Yoghurt","Boter","Feta","Amandelmelk","Sojamelk","Kwark","Ricotta","Griekse yoghurt","Skyr","Cottage cheese","Crème fraîche","Kokosmelk","Haverroom","Jonge kaas"],
+  "🌾 Granen & Brood": ["Witbrood","Volkoren brood","Pasta","Rijst","Quinoa","Havermout","Zilvervliesrijst","Speltbrood","Boekweit","Amarant"],
+  "🥜 Noten & Zaden":  ["Amandelen","Walnoten","Pindakaas","Tahini","Pijnboompitten","Sesamzaad","Pompoenpitten","Macadamia","Paranoten","Hennepzaad","Maanzaad"],
+  "🫘 Peulvruchten":   ["Linzen","Kikkererwten","Hummus","Tofu","Tempeh","Edamame"],
+  "🛢️ Overig":         ["Olijfolie","Ketchup","Avocado","Koffie","Groene thee","Wijn","Bier","Water","Chips","Chocolade","Aardappel","Sojasaus","Kokosolie","Tomatenpuree","Balsamico","Appelazijn","Miso","Vissaus","Kokosaminos"],
 };
 
 const RECIPES = {
@@ -1051,6 +1273,37 @@ const ONBOARD_STEPS = [
   { id:"app3",   color:"#ec4899" },
 ];
 
+
+const BEREIDINGEN = {
+  // KETO
+  "Zalm met spinazie": ["Verhit boter in een koekenpan op middelhoog vuur.","Bestrooi de zalm met zout, peper en eventueel citroenrasp.","Bak de zalm 3-4 minuten per kant tot hij goudbruin is.","Fruit in dezelfde pan de knoflook 1 minuut.","Voeg de spinazie toe en roer tot hij geslonken is.","Breng op smaak met citroen, zout en peper.","Serveer de zalm op de spinazie."],
+  "Kip met broccoli": ["Snijd de kipfilet in stukken en kruid met zout en peper.","Verhit olijfolie in een wok op hoog vuur.","Bak de kip 5-6 minuten goudbruin.","Voeg de broccoli en knoflook toe.","Roerbak 4-5 minuten tot de broccoli beetgaar is.","Breng op smaak met zout, peper en eventueel citroen."],
+  "Roerei met champignons": ["Snijd de champignons in plakjes.","Verhit boter in een pan en bak de champignons 3-4 minuten.","Voeg de knoflook toe en bak nog 1 minuut.","Klop de eieren los met zout en peper.","Giet de eieren over de champignons.","Roer zachtjes op laag vuur tot de eieren gaar maar nog romig zijn.","Serveer direct."],
+  "Courgette noedels": ["Maak met een spiraalsnijder of dunschiller courgetteslierten.","Verhit olijfolie in een pan.","Bak de knoflook 1 minuut op middelhoog vuur.","Voeg de courgetteslierten toe en bak 2-3 minuten.","Voeg de gerookte zalm toe en meng goed.","Breng op smaak met citroen, zout en peper.","Serveer direct — niet te lang bakken anders wordt het waterig."],
+  "Keto kaasomelet": ["Klop de eieren los met zout en peper.","Verhit boter in een kleine pan op middelhoog vuur.","Giet de eieren in de pan en laat de onderkant stollen.","Leg de spinazie en kaas op de helft.","Vouw de omelet dubbel.","Laat nog 1 minuut op laag vuur staan tot de kaas gesmolten is."],
+  // VEGAN
+  "Quinoa bowl": ["Spoel de quinoa goed af en kook 15 minuten in dubbele hoeveelheid water.","Spoel de kikkererwten af en dep droog.","Rooster de kikkererwten 20 minuten in de oven op 200°C.","Blancheer de spinazie kort in kokend water.","Snijd de tomaat in partjes.","Meng alle ingrediënten in een kom.","Besprenkel met olijfolie en citroensap.","Breng op smaak met zout en peper."],
+  "Linzensoep": ["Spoel de linzen af.","Snijd de ui en knoflook fijn en fruit in olijfolie.","Voeg de linzen toe met 800ml water of groentebouillon.","Voeg de tomaten toe.","Laat 25-30 minuten sudderen tot de linzen zacht zijn.","Breng op smaak met zout, peper en komijn.","Pureer gedeeltelijk voor een romiger resultaat."],
+  "Boeddha bowl": ["Kook de rijst volgens de verpakking.","Spoel de kikkererwten af en rooster 20 minuten op 200°C.","Snijd de avocado in plakjes.","Maak tahinidressing: tahini, citroensap, knoflook en water.","Leg rijst, kikkererwten, avocado en spinazie in een kom.","Druppel de tahinidressing erover.","Breng op smaak met zout en peper."],
+  // MEDITERRAAN
+  "Griekse salade": ["Snijd de tomaten, komkommer en ui in stukken.","Meng in een grote schaal.","Verkruimel de feta erover.","Besprenkel met olijfolie.","Breng op smaak met zout, peper en oregano.","Serveer direct of laat 10 minuten intrekken."],
+  "Gegrilde zalm": ["Verhit een grillpan op hoog vuur.","Wrijf de zalm in met olijfolie, zout en peper.","Gril de zalm 3-4 minuten per kant.","Besprenkel met citroensap en knoflook.","Serveer direct met een groene salade."],
+  "Tonijn pasta": ["Kook de pasta al dente.","Verhit olijfolie in een pan en bak de knoflook 1 minuut.","Voeg de tomaten toe en laat 5 minuten sudderen.","Voeg de tonijn toe en meng goed.","Giet de pasta af en meng met de saus.","Breng op smaak met zout, peper en basilicum."],
+  // CALORIEARM
+  "Kip met groenten": ["Verwarm de oven voor op 200°C.","Leg kipfilet op een bakplaat.","Snijd alle groenten en leg er omheen.","Besprenkel met olijfolie, zout en peper.","Rooster 20-25 minuten tot de kip gaar is.","Controleer of de kip doorgekookt is voor je serveert."],
+  "Tonijn salade": ["Giet de tonijn af en prak fijn.","Snijd komkommer, tomaat en sla in stukken.","Meng alles in een kom.","Besprenkel met citroensap en eventueel een klein beetje olijfolie.","Breng op smaak met zout en peper.","Serveer direct."],
+  "Groentebouillon": ["Snijd alle groenten in grove stukken.","Verhit olijfolie in een soeppan.","Fruit de ui en knoflook 2 minuten.","Voeg de overige groenten toe.","Giet 1 liter water erbij.","Laat 20 minuten sudderen.","Breng op smaak met zout, peper en kruiden."],
+  // DASH
+  "DASH kipschotel": ["Verhit olijfolie in een pan.","Bak de kipfilet 5-6 minuten per kant.","Voeg de spinazie toe en roer tot geslonken.","Snijd de tomaat in stukken en voeg toe.","Serveer met een sneetje volkoren brood.","Breng op smaak met kruiden — gebruik weinig zout."],
+  "Havermout ontbijt DASH": ["Breng de amandelmelk aan de kook.","Voeg de havermout toe en roer goed.","Laat 3-4 minuten sudderen op laag vuur.","Snijd de banaan in plakjes.","Schep de havermout in een kom.","Leg de banaan en blauwe bessen erop.","Eventueel besprenkelen met een beetje honing."],
+  // ANTI-INFLAMMATOIR
+  "Anti-inflam. bowl": ["Kook de quinoa 15 minuten.","Bak de zalm 3-4 minuten per kant in olijfolie.","Was de spinazie en blauwe bessen.","Hak de walnoten grof.","Leg quinoa als basis in een kom.","Voeg zalm, spinazie en blauwe bessen toe.","Strooi de walnoten erover.","Besprenkel met olijfolie en citroensap."],
+  "Kurkuma kip": ["Meng kurkuma, zout, peper en olijfolie als marinade.","Wrijf de kipfilet in met de marinade.","Laat 15 minuten intrekken.","Verhit een pan op middelhoog vuur.","Bak de kip 6-7 minuten per kant.","Voeg de spinazie toe in de laatste 2 minuten.","Breng op smaak met citroen."],
+  // FODMAP
+  "FODMAP kipschotel": ["Verhit olijfolie in een pan (geen knoflook of ui!).","Bak de kipfilet 5-6 minuten per kant.","Snijd de courgette en paprika in stukken.","Voeg de groenten toe en bak 5 minuten.","Kook de rijst apart.","Serveer de kip met groenten op de rijst.","Breng op smaak met zout en peper — vermijd knoflook."],
+  "Rijst met spinazie": ["Kook de rijst volgens de verpakking.","Verhit olijfolie in een pan.","Voeg de spinazie toe en roer tot geslonken.","Breng op smaak met citroensap en zout.","Schep de spinazie over de rijst.","Serveer direct."],
+};
+
 export default function App() {
   const [screen, setScreen]       = useState("splash");
   const [tab, setTab]             = useState("checker");
@@ -1109,6 +1362,16 @@ export default function App() {
   const [bewegingTracker, setBewegingTracker] = useState({ minuten:"", type:"wandelen" });
   const [trackerLog, setTrackerLog] = useState([]);
   const [trackerSaved, setTrackerSaved] = useState(false);
+  const [maaltijdTab, setMaaltijdTab] = useState("ontbijt");
+  const [maaltijdLog, setMaaltijdLog] = useState({ ontbijt:[], lunch:[], diner:[], snack:[] });
+  const [maaltijdSearch, setMaaltijdSearch] = useState("");
+  const [maaltijdSuggestions, setMaaltijdSuggestions] = useState([]);
+  const [selectedMaaltijdProduct, setSelectedMaaltijdProduct] = useState(null);
+  const [hoeveelheidType, setHoeveelheidType] = useState("gram");
+  const [hoeveelheid, setHoeveelheid] = useState("");
+  const [showMaaltijdTracker, setShowMaaltijdTracker] = useState(false);
+  const [scannerMaaltijd, setScannerMaaltijd] = useState(false);
+  const [showReceptDetail, setShowReceptDetail] = useState(null); // { recept, dieet }
   const [installPrompt, setInstallPrompt] = useState(null);
   const [showInstallBanner, setShowInstallBanner] = useState(false);
   const [showAccessCode, setShowAccessCode] = useState(false);
@@ -1279,6 +1542,24 @@ export default function App() {
   const toggleFavorite = (product) => {
     setFavorites(p => p.includes(product) ? p.filter(x=>x!==product) : [...p, product]);
   };
+  const berekenKcal = (product, type, waarde) => {
+    const kcalPer100 = DB[product]?.cal || 0;
+    const w = parseFloat(waarde) || 0;
+    if (type === "gram") return Math.round((kcalPer100 / 100) * w);
+    if (type === "portie") {
+      const sizes = { klein: 75, normaal: 150, groot: 250 };
+      return Math.round((kcalPer100 / 100) * (sizes[waarde] || 150));
+    }
+    if (type === "stuks") return Math.round(kcalPer100 * w / 100 * 80);
+    return 0;
+  };
+
+  const totaalKcal = (maaltijd) =>
+    (maaltijdLog[maaltijd] || []).reduce((sum, item) => sum + (item.kcal || 0), 0);
+
+  const totaalDagKcal = () =>
+    Object.keys(maaltijdLog).reduce((sum, m) => sum + totaalKcal(m), 0);
+
   const fetchRecipeFromUrl = async (url) => {
     if (!url.trim()) return;
     setMealUrlLoading(true);
@@ -1860,10 +2141,11 @@ export default function App() {
         </div>
       )}
 
-      {/* TABS */}
-      <div style={{ display:"flex", margin:"12px 16px 0", background:"rgba(34,139,34,0.06)", borderRadius:12, padding:3, gap:2 }}>
-        {[{id:"checker",label:"🔍 Check"},{id:"scanner",label:"📷 Scan"},{id:"recepten",label:"🍳 Recepten"},{id:"weekmenu",label:"📅 Menu"},{id:"profiel",label:"👤 Profiel"},{id:"supplementen",label:"💊 Suppls"}].map(t => (
-          <button key={t.id} onClick={()=>setTab(t.id)} style={{ flex:1, padding:"8px 0", border:"none", borderRadius:9, cursor:"pointer", background:tab===t.id?"rgba(34,139,34,0.13)":"transparent", color:tab===t.id?"#fff":"rgba(30,90,30,0.45)", fontSize:11, fontWeight:tab===t.id?600:400, transition:"all 0.18s" }}>{t.label}</button>
+      {/* TABS — scrollbaar voor alle tabs */}
+      <style>{`.tab-scroll::-webkit-scrollbar{display:none}`}</style>
+      <div className="tab-scroll" style={{ display:"flex", margin:"12px 16px 0", background:"rgba(34,139,34,0.06)", borderRadius:12, padding:3, gap:2, overflowX:"auto", WebkitOverflowScrolling:"touch", scrollbarWidth:"none" }}>
+        {[{id:"checker",label:"🔍 Check"},{id:"scanner",label:"📷 Scan"},{id:"recepten",label:"🍳 Recepten"},{id:"weekmenu",label:"📅 Menu"},{id:"tracker",label:"🍽️ Tracker"},{id:"vevo",label:"🔢 VEVO"},{id:"leefstijl",label:"💪 Leefstijl"},{id:"supplementen",label:"💊 Suppls"},{id:"profiel",label:"👤 Profiel"}].map(t => (
+          <button key={t.id} onClick={()=>setTab(t.id)} style={{ flex:"0 0 auto", padding:"8px 12px", border:"none", borderRadius:9, cursor:"pointer", background:tab===t.id?"rgba(45,158,107,0.2)":"transparent", color:tab===t.id?"#2d9e6b":"rgba(30,90,30,0.45)", fontSize:11, fontWeight:tab===t.id?700:400, transition:"all 0.18s", whiteSpace:"nowrap" }}>{t.label}</button>
         ))}
       </div>
 
@@ -2392,6 +2674,186 @@ export default function App() {
                     </button>
                     <p style={{ margin:"8px 0 0", fontSize:10, color:"rgba(30,90,30,0.35)", textAlign:"center" }}>⏱ Reactie binnen 3 werkdagen · Vertrouwelijk</p>
                   </div>
+                )}
+              </div>
+            )}
+          </div>
+        )}
+
+        {/* ═══ MAALTIJD TRACKER TAB ═══ */}
+        {tab==="tracker" && (
+          <div style={{ animation:"fadeUp 0.3s ease" }}>
+
+            {/* Header */}
+            <div style={{ background:"linear-gradient(135deg,rgba(45,158,107,0.1),rgba(168,230,207,0.08))", borderRadius:16, padding:16, marginBottom:14, border:"1px solid rgba(45,158,107,0.2)" }}>
+              <div style={{ display:"flex", justifyContent:"space-between", alignItems:"flex-start" }}>
+                <div>
+                  <h2 style={{ fontFamily:"'Playfair Display',serif", margin:"0 0 3px", fontSize:20, color:"#1a3a1a" }}>🍽️ Maaltijdtracker</h2>
+                  <p style={{ margin:0, fontSize:12, color:"rgba(30,90,30,0.55)" }}>Bijhouden wat je eet met kcal-telling</p>
+                </div>
+                <div style={{ textAlign:"right" }}>
+                  <p style={{ margin:"0 0 1px", fontSize:22, fontWeight:800, color:"#2d9e6b" }}>{totaalDagKcal()}</p>
+                  <p style={{ margin:0, fontSize:10, color:"rgba(30,90,30,0.45)" }}>kcal vandaag</p>
+                </div>
+              </div>
+
+              {/* Kcal verdeling per maaltijd */}
+              <div style={{ display:"grid", gridTemplateColumns:"1fr 1fr 1fr 1fr", gap:6, marginTop:12 }}>
+                {["ontbijt","lunch","diner","snack"].map(m => (
+                  <div key={m} style={{ background:"rgba(255,255,255,0.5)", borderRadius:10, padding:"7px 6px", textAlign:"center" }}>
+                    <p style={{ margin:"0 0 1px", fontSize:10, color:"rgba(30,90,30,0.5)", textTransform:"capitalize" }}>{m}</p>
+                    <p style={{ margin:0, fontSize:14, fontWeight:700, color:"#2d9e6b" }}>{totaalKcal(m)}</p>
+                    <p style={{ margin:0, fontSize:9, color:"rgba(30,90,30,0.4)" }}>kcal</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {!hasStarter ? (
+              <div style={{ textAlign:"center", padding:"20px 0" }}>
+                <p style={{ fontSize:13, color:"rgba(30,90,30,0.55)", marginBottom:16 }}>De maaltijdtracker is beschikbaar voor Starter-leden.</p>
+                <button onClick={()=>setShowPaywall(true)} style={{ padding:"12px 28px", borderRadius:14, border:"none", background:"linear-gradient(135deg,#f97316,#fbbf24)", color:"#1a0a00", fontSize:14, fontWeight:700, cursor:"pointer" }}>⚡ Upgrade naar Starter</button>
+              </div>
+            ) : (
+              <div>
+                {/* Maaltijd tabs */}
+                <div style={{ display:"flex", background:"rgba(34,139,34,0.06)", borderRadius:12, padding:3, marginBottom:14, gap:2 }}>
+                  {[["ontbijt","🌅"],["lunch","☀️"],["diner","🌙"],["snack","🍎"]].map(([id,emoji]) => (
+                    <button key={id} onClick={()=>setMaaltijdTab(id)} style={{ flex:1, padding:"8px 0", border:"none", borderRadius:9, cursor:"pointer", background:maaltijdTab===id?"rgba(45,158,107,0.2)":"transparent", color:maaltijdTab===id?"#2d9e6b":"rgba(30,90,30,0.45)", fontSize:11, fontWeight:maaltijdTab===id?700:400 }}>
+                      {emoji} {id}
+                    </button>
+                  ))}
+                </div>
+
+                {/* Product zoeken */}
+                <div style={{ position:"relative", marginBottom:10 }}>
+                  <input value={maaltijdSearch} onChange={e=>{
+                    setMaaltijdSearch(e.target.value);
+                    if(e.target.value.length>1) setMaaltijdSuggestions(ALL_PRODUCTS.filter(p=>p.toLowerCase().includes(e.target.value.toLowerCase())).slice(0,6));
+                    else setMaaltijdSuggestions([]);
+                  }} placeholder={`Zoek product voor ${maaltijdTab}...`}
+                    style={{ width:"100%", padding:"12px 48px 12px 16px", borderRadius:12, border:"1px solid rgba(45,158,107,0.25)", background:"rgba(255,255,255,0.9)", fontSize:14, outline:"none", color:"#1a3a1a", boxSizing:"border-box" }} />
+                  <span style={{ position:"absolute", right:14, top:"50%", transform:"translateY(-50%)", fontSize:18 }}>🔍</span>
+                </div>
+
+                {/* Suggesties */}
+                {maaltijdSuggestions.length>0 && (
+                  <div style={{ background:"rgba(255,255,255,0.95)", borderRadius:11, marginBottom:10, overflow:"hidden", border:"1px solid rgba(45,158,107,0.2)", boxShadow:"0 4px 12px rgba(0,0,0,0.08)" }}>
+                    {maaltijdSuggestions.map(s => (
+                      <div key={s} onClick={()=>{ setSelectedMaaltijdProduct(s); setMaaltijdSearch(""); setMaaltijdSuggestions([]); setHoeveelheid(""); setHoeveelheidType("gram"); }}
+                        style={{ padding:"10px 14px", cursor:"pointer", borderBottom:"1px solid rgba(45,158,107,0.08)", fontSize:13, color:"#1a3a1a", display:"flex", justifyContent:"space-between" }}>
+                        <span>{s}</span>
+                        <span style={{ fontSize:11, color:"rgba(30,90,30,0.45)" }}>{DB[s]?.cal || 0} kcal/100g</span>
+                      </div>
+                    ))}
+                  </div>
+                )}
+
+                {/* Hoeveelheid invoer */}
+                {selectedMaaltijdProduct && (
+                  <div style={{ background:"rgba(45,158,107,0.08)", borderRadius:14, padding:14, marginBottom:12, border:"1px solid rgba(45,158,107,0.2)" }}>
+                    <div style={{ display:"flex", justifyContent:"space-between", alignItems:"center", marginBottom:10 }}>
+                      <p style={{ margin:0, fontSize:14, fontWeight:700, color:"#1a3a1a" }}>{selectedMaaltijdProduct}</p>
+                      <p style={{ margin:0, fontSize:12, color:"rgba(30,90,30,0.5)" }}>{DB[selectedMaaltijdProduct]?.cal || 0} kcal/100g</p>
+                    </div>
+
+                    {/* Type kiezen */}
+                    <div style={{ display:"flex", gap:6, marginBottom:10 }}>
+                      {[["gram","⚖️ Gram"],["portie","🍽️ Portie"],["stuks","🔢 Stuks"]].map(([type,label]) => (
+                        <button key={type} onClick={()=>{ setHoeveelheidType(type); setHoeveelheid(""); }} style={{ flex:1, padding:"7px 4px", borderRadius:10, border:`1.5px solid ${hoeveelheidType===type?"#2d9e6b":"rgba(34,139,34,0.2)"}`, background:hoeveelheidType===type?"rgba(45,158,107,0.15)":"rgba(255,255,255,0.6)", color:hoeveelheidType===type?"#2d9e6b":"rgba(30,90,30,0.55)", fontSize:11, cursor:"pointer", fontWeight:hoeveelheidType===type?700:400 }}>{label}</button>
+                      ))}
+                    </div>
+
+                    {/* Invoer */}
+                    {hoeveelheidType==="gram" && (
+                      <div style={{ display:"flex", gap:8, alignItems:"center", marginBottom:8 }}>
+                        <input type="number" value={hoeveelheid} onChange={e=>setHoeveelheid(e.target.value)} placeholder="Aantal gram..."
+                          style={{ flex:1, padding:"10px 14px", borderRadius:10, border:"1px solid rgba(45,158,107,0.25)", background:"rgba(255,255,255,0.9)", fontSize:14, outline:"none", color:"#1a3a1a" }} />
+                        <span style={{ fontSize:12, color:"rgba(30,90,30,0.55)", flexShrink:0 }}>gram</span>
+                      </div>
+                    )}
+                    {hoeveelheidType==="portie" && (
+                      <div style={{ display:"flex", gap:6, marginBottom:8 }}>
+                        {[["klein","~75g"],["normaal","~150g"],["groot","~250g"]].map(([size,gram]) => (
+                          <button key={size} onClick={()=>setHoeveelheid(size)} style={{ flex:1, padding:"9px 4px", borderRadius:10, border:`1.5px solid ${hoeveelheid===size?"#2d9e6b":"rgba(34,139,34,0.2)"}`, background:hoeveelheid===size?"rgba(45,158,107,0.15)":"rgba(255,255,255,0.6)", cursor:"pointer", display:"flex", flexDirection:"column", alignItems:"center", gap:2 }}>
+                            <span style={{ fontSize:12, fontWeight:hoeveelheid===size?700:400, color:hoeveelheid===size?"#2d9e6b":"rgba(30,90,30,0.6)" }}>{size}</span>
+                            <span style={{ fontSize:10, color:"rgba(30,90,30,0.4)" }}>{gram}</span>
+                          </button>
+                        ))}
+                      </div>
+                    )}
+                    {hoeveelheidType==="stuks" && (
+                      <div style={{ display:"flex", gap:8, alignItems:"center", marginBottom:8 }}>
+                        <input type="number" value={hoeveelheid} onChange={e=>setHoeveelheid(e.target.value)} placeholder="Aantal stuks..."
+                          style={{ flex:1, padding:"10px 14px", borderRadius:10, border:"1px solid rgba(45,158,107,0.25)", background:"rgba(255,255,255,0.9)", fontSize:14, outline:"none", color:"#1a3a1a" }} />
+                        <span style={{ fontSize:12, color:"rgba(30,90,30,0.55)", flexShrink:0 }}>stuks</span>
+                      </div>
+                    )}
+
+                    {/* Kcal preview */}
+                    {hoeveelheid && (
+                      <div style={{ background:"rgba(34,197,94,0.1)", borderRadius:10, padding:"8px 12px", marginBottom:10, border:"1px solid rgba(34,197,94,0.2)", display:"flex", justifyContent:"space-between", alignItems:"center" }}>
+                        <span style={{ fontSize:13, color:"rgba(30,90,30,0.7)" }}>Geschatte calorieën:</span>
+                        <span style={{ fontSize:18, fontWeight:800, color:"#22c55e" }}>{berekenKcal(selectedMaaltijdProduct, hoeveelheidType, hoeveelheid)} kcal</span>
+                      </div>
+                    )}
+
+                    <div style={{ display:"flex", gap:8 }}>
+                      <button onClick={()=>{
+                        if(!hoeveelheid) return;
+                        const kcal = berekenKcal(selectedMaaltijdProduct, hoeveelheidType, hoeveelheid);
+                        const item = { product: selectedMaaltijdProduct, type: hoeveelheidType, waarde: hoeveelheid, kcal, tijd: new Date().toLocaleTimeString("nl-NL",{hour:"2-digit",minute:"2-digit"}) };
+                        setMaaltijdLog(p=>({...p,[maaltijdTab]:[...p[maaltijdTab],item]}));
+                        setSelectedMaaltijdProduct(null); setHoeveelheid(""); setMaaltijdSearch("");
+                      }} disabled={!hoeveelheid}
+                        style={{ flex:1, padding:11, borderRadius:11, border:"none", background:hoeveelheid?"linear-gradient(135deg,#2d9e6b,#a8e6cf)":"rgba(34,139,34,0.1)", color:hoeveelheid?"#fff":"rgba(30,90,30,0.35)", fontSize:13, fontWeight:700, cursor:hoeveelheid?"pointer":"default" }}>
+                        ✓ Toevoegen
+                      </button>
+                      <button onClick={()=>{ setSelectedMaaltijdProduct(null); setHoeveelheid(""); }}
+                        style={{ padding:"11px 14px", borderRadius:11, border:"1px solid rgba(34,139,34,0.2)", background:"transparent", color:"rgba(30,90,30,0.5)", fontSize:13, cursor:"pointer" }}>✕</button>
+                    </div>
+                  </div>
+                )}
+
+                {/* Gescande/toegevoegde producten voor deze maaltijd */}
+                {(maaltijdLog[maaltijdTab]||[]).length > 0 ? (
+                  <div style={{ marginBottom:12 }}>
+                    <p style={{ margin:"0 0 8px", fontSize:11, color:"rgba(30,90,30,0.5)", textTransform:"uppercase", letterSpacing:1 }}>Wat je at bij {maaltijdTab}</p>
+                    {maaltijdLog[maaltijdTab].map((item,i) => (
+                      <div key={i} style={{ display:"flex", gap:10, alignItems:"center", background:"rgba(34,139,34,0.05)", borderRadius:11, padding:"10px 13px", marginBottom:6, border:"1px solid rgba(34,139,34,0.1)" }}>
+                        <div style={{ flex:1 }}>
+                          <p style={{ margin:"0 0 1px", fontSize:13, fontWeight:600, color:"#1a3a1a" }}>{item.product}</p>
+                          <p style={{ margin:0, fontSize:11, color:"rgba(30,90,30,0.5)" }}>
+                            {item.type==="gram" ? `${item.waarde}g` : item.type==="portie" ? `${item.waarde} portie` : `${item.waarde} stuk${item.waarde>1?"s":""}`} · {item.tijd}
+                          </p>
+                        </div>
+                        <div style={{ textAlign:"right" }}>
+                          <p style={{ margin:"0 0 1px", fontSize:15, fontWeight:700, color:"#2d9e6b" }}>{item.kcal}</p>
+                          <p style={{ margin:0, fontSize:9, color:"rgba(30,90,30,0.4)" }}>kcal</p>
+                        </div>
+                        <button onClick={()=>setMaaltijdLog(p=>({...p,[maaltijdTab]:p[maaltijdTab].filter((_,j)=>j!==i)}))}
+                          style={{ background:"rgba(239,68,68,0.1)", border:"none", borderRadius:8, width:26, height:26, color:"#ef4444", cursor:"pointer", fontSize:12, flexShrink:0 }}>✕</button>
+                      </div>
+                    ))}
+                    <div style={{ background:"rgba(45,158,107,0.1)", borderRadius:10, padding:"8px 13px", border:"1px solid rgba(45,158,107,0.2)", display:"flex", justifyContent:"space-between" }}>
+                      <span style={{ fontSize:13, fontWeight:600, color:"#1a3a1a" }}>Totaal {maaltijdTab}</span>
+                      <span style={{ fontSize:15, fontWeight:800, color:"#2d9e6b" }}>{totaalKcal(maaltijdTab)} kcal</span>
+                    </div>
+                  </div>
+                ) : (
+                  <div style={{ textAlign:"center", padding:"16px 0", color:"rgba(30,90,30,0.4)" }}>
+                    <p style={{ fontSize:24, marginBottom:6 }}>🍽️</p>
+                    <p style={{ fontSize:13 }}>Nog niets toegevoegd voor {maaltijdTab}</p>
+                    <p style={{ fontSize:11, marginTop:4 }}>Zoek een product hierboven</p>
+                  </div>
+                )}
+
+                {/* Dag reset */}
+                {totaalDagKcal() > 0 && (
+                  <button onClick={()=>{ if(window.confirm("Wil je alle maaltijden van vandaag wissen?")) setMaaltijdLog({ontbijt:[],lunch:[],diner:[],snack:[]}); }}
+                    style={{ width:"100%", padding:10, borderRadius:11, border:"1px solid rgba(239,68,68,0.25)", background:"rgba(239,68,68,0.06)", color:"#ef4444", fontSize:12, cursor:"pointer" }}>
+                    🗑️ Maaltijden van vandaag wissen
+                  </button>
                 )}
               </div>
             )}
@@ -3165,6 +3627,88 @@ export default function App() {
           </div>
         </div>
       )}
+
+      {/* RECEPT DETAIL MODAL */}
+      {showReceptDetail && (() => {
+        const { recept, dieet } = showReceptDetail;
+        const diet = DIETS.find(d=>d.id===dieet);
+        const stappen = BEREIDINGEN[recept.name] || [];
+        return (
+          <div style={{ position:"fixed", inset:0, background:"rgba(0,0,0,0.6)", zIndex:100, display:"flex", alignItems:"flex-end" }} onClick={()=>setShowReceptDetail(null)}>
+            <div onClick={e=>e.stopPropagation()} style={{ width:"100%", maxWidth:430, margin:"0 auto", background:"#e8f5e8", borderRadius:"24px 24px 0 0", padding:24, maxHeight:"88vh", overflowY:"auto", border:"1px solid rgba(34,139,34,0.2)" }}>
+
+              {/* Header */}
+              <div style={{ marginBottom:16 }}>
+                <div style={{ display:"flex", justifyContent:"space-between", alignItems:"flex-start", marginBottom:6 }}>
+                  <h3 style={{ fontFamily:"'Playfair Display',serif", margin:0, fontSize:22, color:"#1a3a1a", flex:1, paddingRight:10 }}>{recept.name}</h3>
+                  <button onClick={()=>setShowReceptDetail(null)} style={{ background:"rgba(34,139,34,0.1)", border:"none", borderRadius:8, width:30, height:30, fontSize:16, cursor:"pointer", color:"#2d9e6b", flexShrink:0 }}>✕</button>
+                </div>
+                <div style={{ display:"flex", gap:10, alignItems:"center" }}>
+                  {diet && <span style={{ fontSize:11, background:`${diet.color}15`, color:diet.color, borderRadius:8, padding:"2px 9px", border:`1px solid ${diet.color}25` }}>{diet.emoji} {diet.label}</span>}
+                  <span style={{ fontSize:11, color:"rgba(30,90,30,0.5)" }}>⏱ {recept.time}</span>
+                  <span style={{ fontSize:11, color:"rgba(30,90,30,0.5)" }}>🔥 {recept.cal} kcal</span>
+                </div>
+              </div>
+
+              {/* Beschrijving */}
+              <div style={{ background:"rgba(45,158,107,0.08)", borderRadius:12, padding:12, marginBottom:14, border:"1px solid rgba(45,158,107,0.15)" }}>
+                <p style={{ margin:0, fontSize:13, color:"rgba(30,90,30,0.75)", lineHeight:1.6, fontStyle:"italic" }}>{recept.desc}</p>
+              </div>
+
+              {/* Ingrediënten */}
+              <div style={{ marginBottom:14 }}>
+                <p style={{ margin:"0 0 10px", fontSize:14, fontWeight:700, color:"#1a3a1a" }}>🛒 Ingrediënten</p>
+                <div style={{ display:"flex", flexWrap:"wrap", gap:7 }}>
+                  {recept.ingredients.map((ing,i) => (
+                    <div key={i} onClick={()=>{ setTab("checker"); setSearchQuery(ing); setShowReceptDetail(null); }}
+                      style={{ background:"rgba(45,158,107,0.1)", borderRadius:10, padding:"6px 12px", fontSize:12, color:"#2d9e6b", border:"1px solid rgba(45,158,107,0.2)", cursor:"pointer", display:"flex", alignItems:"center", gap:5 }}>
+                      {ing} <span style={{ fontSize:10, opacity:0.6 }}>🔍</span>
+                    </div>
+                  ))}
+                </div>
+                <p style={{ margin:"6px 0 0", fontSize:10, color:"rgba(30,90,30,0.4)" }}>Tik op een ingrediënt om het te checken op dieet en allergie</p>
+              </div>
+
+              {/* Bereiding */}
+              <div style={{ marginBottom:16 }}>
+                <p style={{ margin:"0 0 10px", fontSize:14, fontWeight:700, color:"#1a3a1a" }}>👩‍🍳 Bereiding</p>
+                {stappen.length > 0
+                  ? stappen.map((stap, i) => (
+                      <div key={i} style={{ display:"flex", gap:12, marginBottom:10, alignItems:"flex-start" }}>
+                        <div style={{ width:26, height:26, borderRadius:"50%", background:"#2d9e6b", display:"flex", alignItems:"center", justifyContent:"center", fontSize:12, fontWeight:700, color:"#fff", flexShrink:0 }}>{i+1}</div>
+                        <p style={{ margin:0, fontSize:13, color:"rgba(30,90,30,0.8)", lineHeight:1.6, paddingTop:3 }}>{stap}</p>
+                      </div>
+                    ))
+                  : <div style={{ background:"rgba(45,158,107,0.06)", borderRadius:12, padding:14, border:"1px solid rgba(45,158,107,0.12)" }}>
+                      <p style={{ margin:"0 0 8px", fontSize:13, fontWeight:600, color:"#1a3a1a" }}>Bereidingswijze:</p>
+                      <p style={{ margin:"0 0 6px", fontSize:12, color:"rgba(30,90,30,0.7)", lineHeight:1.6 }}>1. Bereid alle ingrediënten voor.</p>
+                      <p style={{ margin:"0 0 6px", fontSize:12, color:"rgba(30,90,30,0.7)", lineHeight:1.6 }}>2. Verhit een pan op middelhoog vuur met wat olijfolie.</p>
+                      <p style={{ margin:"0 0 6px", fontSize:12, color:"rgba(30,90,30,0.7)", lineHeight:1.6 }}>3. Bereid de ingrediënten volgens hun eigen bereidingstijd.</p>
+                      <p style={{ margin:"0 0 6px", fontSize:12, color:"rgba(30,90,30,0.7)", lineHeight:1.6 }}>4. Breng op smaak met zout, peper en de genoemde kruiden.</p>
+                      <p style={{ margin:0, fontSize:12, color:"rgba(30,90,30,0.7)", lineHeight:1.6 }}>5. Serveer direct en geniet!</p>
+                    </div>
+                }
+              </div>
+
+              {/* Amanda's tip */}
+              <div style={{ background:"rgba(192,132,252,0.08)", borderRadius:12, padding:14, marginBottom:16, border:"1px solid rgba(192,132,252,0.2)" }}>
+                <p style={{ margin:"0 0 4px", fontSize:12, fontWeight:700, color:"#c084fc" }}>💡 Amanda's tip</p>
+                <p style={{ margin:0, fontSize:12, color:"rgba(30,90,30,0.7)", lineHeight:1.6 }}>
+                  {recept.cal < 300 ? "Dit is een licht recept — perfect als lunch of avondsnack. Combineer met een eiwitrijke bron voor meer verzadiging." :
+                   recept.cal < 450 ? "Een uitgebalanceerde maaltijd. Voeg extra groenten toe voor meer vezels en vitamines." :
+                   "Dit recept is calorierijker — serveer als hoofdmaaltijd en eet kleiner tussendoor."}
+                </p>
+              </div>
+
+              {/* Voeg toe aan weekmenu */}
+              <button onClick={()=>{ setTab("weekmenu"); setShowReceptDetail(null); }}
+                style={{ width:"100%", padding:13, borderRadius:12, border:"none", background:"linear-gradient(135deg,#2d9e6b,#a8e6cf)", color:"#fff", fontSize:14, fontWeight:700, cursor:"pointer" }}>
+                📅 Voeg toe aan weekmenu →
+              </button>
+            </div>
+          </div>
+        );
+      })()}
 
       {/* SUPPLEMENT DETAIL MODAL */}
       {showSuppDetail && (() => {
