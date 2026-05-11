@@ -2813,10 +2813,16 @@ export default function App() {
       {/* DIET PILLS (only in dieet mode) */}
       {mode==="dieet" && (
         <div style={{ padding:"12px 16px 0" }}>
+          <p style={{ margin:"0 0 8px", fontSize:11, color:"rgba(30,90,30,0.5)" }}>Tik op ℹ️ voor uitleg over een dieet</p>
           <div style={{ display:"flex", flexWrap:"wrap", gap:6 }}>
             {DIETS.map(diet => {
               const on = selectedDiets.includes(diet.id);
-              return <button key={diet.id} onClick={()=>toggleDiet(diet.id)} style={{ padding:"5px 11px", borderRadius:20, border:`1.5px solid ${on?diet.color:"rgba(34,139,34,0.14)"}`, background:on?`${diet.color}20`:"transparent", color:on?diet.color:"rgba(30,90,30,0.5)", fontSize:12, cursor:"pointer", fontWeight:on?600:400, transition:"all 0.18s" }}>{diet.emoji} {diet.label}</button>;
+              return (
+                <div key={diet.id} style={{ display:"flex", alignItems:"center", gap:4 }}>
+                  <button onClick={()=>toggleDiet(diet.id)} style={{ padding:"5px 11px", borderRadius:20, border:`1.5px solid ${on?diet.color:"rgba(34,139,34,0.14)"}`, background:on?`${diet.color}20`:"transparent", color:on?diet.color:"rgba(30,90,30,0.5)", fontSize:12, cursor:"pointer", fontWeight:on?600:400, transition:"all 0.18s" }}>{diet.emoji} {diet.label}{on?" ✓":""}</button>
+                  <button onClick={()=>setShowDietInfo(diet.id)} style={{ width:22, height:22, borderRadius:"50%", border:`1px solid ${diet.color}50`, background:`${diet.color}12`, color:diet.color, fontSize:11, cursor:"pointer", display:"flex", alignItems:"center", justifyContent:"center", flexShrink:0, padding:0, fontWeight:700 }}>i</button>
+                </div>
+              );
             })}
           </div>
         </div>
